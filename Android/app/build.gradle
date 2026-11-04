@@ -81,6 +81,13 @@ android {
     lintOptions {
         abortOnError false
     }
+    // commons-compress / junrar ship license files and Java 9 module descriptors that collide
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/LICENSE*', 'META-INF/NOTICE*', 'META-INF/DEPENDENCIES',
+                         'META-INF/*.md', 'META-INF/versions/9/module-info.class', 'module-info.class']
+        }
+    }
     if (buildAsLibrary) {
         libraryVariants.all { variant ->
             variant.outputs.each { output ->
@@ -98,6 +105,10 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.core:core:1.7.0' // Use the latest version
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    // Unpacking GameBanana downloads in the launcher: 7z (+ LZMA via xz) and RAR4
+    implementation 'org.apache.commons:commons-compress:1.27.1'
+    implementation 'org.tukaani:xz:1.10'
+    implementation 'com.github.junrar:junrar:7.5.5'
 }
 
 task wrapper(type: Wrapper) {
