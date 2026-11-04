@@ -357,6 +357,9 @@ public class MainActivity extends SDLActivity{
         values.put("ImGuiScale", 2);
         // Navigate the Enhancements menu with the remote/gamepad.
         values.put("ControlNav", 1);
+        // Show mods' alternate assets. On PC this is toggled with Tab, which a TV remote doesn't have,
+        // and most GameBanana model/texture mods only appear with it on. No effect without such mods.
+        values.put("AltAssets", 1);
         try {
             // Edits the file without reformatting numbers (see SohConfig); only fills in missing keys
             // unless the applyTvPreset extra was passed.

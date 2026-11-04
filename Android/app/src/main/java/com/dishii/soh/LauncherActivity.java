@@ -729,15 +729,33 @@ public class LauncherActivity extends Activity {
         });
     }
 
+    private static void collectFiles(File f, List<File> out) {
+        if (f.isFile()) { out.add(f); return; }
+        File[] children = f.listFiles();
+        if (children != null) for (File c : children) collectFiles(c, out);
+    }
+
     private void commitInstall(ModInstaller.Staged staged, List<ModInstaller.StagedFile> keep) {
         io.execute(() -> {
             try {
                 File where = ModInstaller.commit(staged, keep);
                 int n = keep.size();
+                // Most SoH model/texture mods replace "alternate assets", which stay hidden unless the
+                // game's Use Alternate Assets setting is on (on PC it's toggled with Tab; a TV has no Tab).
+                java.util.List<File> installedFiles = new java.util.ArrayList<>();
+                collectFiles(where, installedFiles);
+                boolean turnedOnAlt = false;
+                if (ModInstaller.usesAltAssets(installedFiles) && SohConfig.getGameSetting("AltAssets", 0) != 1) {
+                    SohConfig.setGameSetting("AltAssets", 1);
+                    turnedOnAlt = true;
+                }
+                final boolean altNote = turnedOnAlt;
                 ui(() -> show(new AlertDialog.Builder(this)
                         .setTitle("Installed")
                         .setMessage(staged.mod.name + " is installed (" + n + " mod file" + (n == 1 ? "" : "s")
-                                + ", in mods/" + where.getName() + "). It loads the next time the game starts.")
+                                + ", in mods/" + where.getName() + "). It loads the next time the game starts."
+                                + (altNote ? "\n\nThis mod uses alternate assets, so Use Alternate Assets has been "
+                                        + "turned on for you." : ""))
                         .setPositiveButton("OK", (x, w) -> { if ("browse".equals(currentPane)) loadBrowse(); })));
             } catch (Throwable e) {
                 ui(() -> error("Couldn't install " + staged.mod.name, e));
@@ -888,6 +906,12 @@ public class LauncherActivity extends Activity {
             grant.requestFocus();
             return;
         }
+        // The game hides model/texture mods unless Use Alternate Assets is on (Tab on PC; no Tab on a TV).
+        View altRow = cycleRow("Use alternate assets (needed by most model/texture mods)",
+                new String[] { "Off", "On" }, new int[] { 0, 1 }, SohConfig.getGameSetting("AltAssets", 0),
+                v -> SohConfig.setGameSetting("AltAssets", v));
+        col.addView(altRow, cardParams());
+
         List<ModInstaller.InstalledMod> mods = ModInstaller.listInstalled();
         if (mods.isEmpty()) {
             col.addView(text("No mods installed yet. Find some under Browse mods, or copy .otr/.o2r files "

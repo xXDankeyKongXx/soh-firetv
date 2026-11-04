@@ -396,6 +396,27 @@ final class ModInstaller {
 
     // ---- Helpers ------------------------------------------------------------------------------
 
+    /**
+     * True if any of these mod files replaces "alternate assets" (paths under alt/), which the game
+     * only shows while its Use Alternate Assets setting is on. .o2r files are zips and are checked;
+     * legacy .otr (MPQ) files can't be inspected here, so they're assumed to need it.
+     */
+    static boolean usesAltAssets(Collection<File> files) {
+        for (File f : files) {
+            String n = f.getName().toLowerCase(Locale.ROOT);
+            if (n.endsWith(".otr")) return true;
+            if (n.endsWith(".o2r") || n.endsWith(".zip")) {
+                try (ZipFile z = openZip(f)) {
+                    Enumeration<? extends ZipEntry> e = z.entries();
+                    while (e.hasMoreElements()) {
+                        if (e.nextElement().getName().replace('\\', '/').startsWith("alt/")) return true;
+                    }
+                } catch (IOException | RuntimeException ignored) { }
+            }
+        }
+        return false;
+    }
+
     /** Files the mod installer pulls out of downloads. */
     static boolean isModArchive(String name) {
         String n = name.toLowerCase(Locale.ROOT);
