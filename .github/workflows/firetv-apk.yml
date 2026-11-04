@@ -47,10 +47,23 @@ jobs:
           # Secret format: "<password>:<base64 PKCS12 keystore>". Without it the APK is debug-signed
           # and no release is published (it couldn't install over the signed version anyway).
           if [ -n "$SOH_SIGNING" ]; then
-            printf '%s' "${SOH_SIGNING#*:}" | base64 -d > "$RUNNER_TEMP/soh.p12"
+            # Tolerate copy/paste damage: spaces, tabs and line breaks anywhere in the value.
+            CLEAN=$(printf '%s' "$SOH_SIGNING" | tr -d ' \t\r\n')
+            PW="${CLEAN%%:*}"
+            B64="${CLEAN#*:}"
+            echo "::add-mask::$PW"
+            echo "secret length ${#CLEAN}, key part ${#B64} chars (expected 5760)"
+            if ! printf '%s' "$B64" | base64 -d > "$RUNNER_TEMP/soh.p12" 2>/dev/null; then
+              echo "::error::SOH_SIGNING doesn't contain a valid key (got ${#B64} of 5760 base64 characters). Re-paste the whole file contents."
+              exit 1
+            fi
+            if ! keytool -list -keystore "$RUNNER_TEMP/soh.p12" -storetype PKCS12 -storepass "$PW" > "$RUNNER_TEMP/ks.txt" 2>&1; then
+              echo "::error::SOH_SIGNING key or password is wrong. Re-paste the whole file contents."
+              exit 1
+            fi
+            grep -i "SHA-256" "$RUNNER_TEMP/ks.txt" || true   # public certificate fingerprint, safe to log
             echo "SOH_KEYSTORE=$RUNNER_TEMP/soh.p12" >> "$GITHUB_ENV"
-            echo "::add-mask::${SOH_SIGNING%%:*}"
-            echo "SOH_KEYSTORE_PASSWORD=${SOH_SIGNING%%:*}" >> "$GITHUB_ENV"
+            echo "SOH_KEYSTORE_PASSWORD=$PW" >> "$GITHUB_ENV"
             echo "SIGNED=1" >> "$GITHUB_ENV"
           else
             echo "::warning::SOH_SIGNING secret not set: debug-signed build, no release"
