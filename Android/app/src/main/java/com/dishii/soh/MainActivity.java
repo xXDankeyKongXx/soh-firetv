@@ -309,6 +309,11 @@ public class MainActivity extends SDLActivity{
         int targetWidth = Math.round(targetHeight * (screenW / (float) screenH));
         targetWidth &= ~1; // keep it even
         Log.i(TAG, "Render surface " + targetWidth + "x" + targetHeight + " (display " + screenW + "x" + screenH + ")");
+        // SurfaceView measures itself from setFixedSize() when its layout is WRAP_CONTENT (SDL's
+        // default), which shrank the game into the top-left corner. Fill the screen explicitly so the
+        // smaller buffer is scaled up to full size by the display hardware.
+        mSurface.setLayoutParams(new android.widget.RelativeLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         mSurface.getHolder().setFixedSize(targetWidth, targetHeight);
     }
 
@@ -655,23 +660,30 @@ public class MainActivity extends SDLActivity{
             if (!targetAssetsDir.exists()) {
                 targetAssetsDir.mkdirs();
             }
-            AssetCopyUtil.copyAssetsToExternal(this, "assets", targetAssetsDir.getAbsolutePath());
-            runOnUiThread(() -> Toast.makeText(this, "Assets copied", Toast.LENGTH_SHORT).show());
+            showStatus("Setting up game files…");
+            AssetCopyUtil.copyAssetsToExternal(this, "assets", targetAssetsDir.getAbsolutePath(),
+                    (copied, total) -> showStatus("Setting up game files…  " + copied + " / " + total));
+            showStatus("Game files ready. Starting…");
         } catch (IOException e) {
             e.printStackTrace();
             runOnUiThread(() -> Toast.makeText(this, "Error copying assets", Toast.LENGTH_LONG).show());
         }
 
         // Copy soh.otr from internal assets
+        showStatus("Copying soh.otr…");
         File targetOtrFile = new File(targetRootFolder, "soh.otr");
+        File partialOtrFile = new File(targetRootFolder, "soh.otr.part"); // renamed only when complete
         try (InputStream in = getAssets().open("soh.otr");
-             OutputStream out = new FileOutputStream(targetOtrFile)) {
+             OutputStream out = new FileOutputStream(partialOtrFile)) {
 
             byte[] buffer = new byte[64 * 1024];
             int read;
             while ((read = in.read(buffer)) != -1) {
                 out.write(buffer, 0, read);
             }
+            out.close();
+            targetOtrFile.delete();
+            if (!partialOtrFile.renameTo(targetOtrFile)) throw new IOException("rename soh.otr failed");
 
             runOnUiThread(() -> Toast.makeText(this, "soh.otr copied", Toast.LENGTH_SHORT).show());
 
@@ -681,7 +693,41 @@ public class MainActivity extends SDLActivity{
         }
 
         applyTvConfigPreset(targetRootFolder);
+        hideStatusSoon();
         setupLatch.countDown();
+    }
+
+    // ---------------------------------------------------------------------------------------------
+    // On-screen status (first-run setup can take a while on a TV; show that it's working)
+    // ---------------------------------------------------------------------------------------------
+
+    private android.widget.TextView statusView;
+
+    private void showStatus(String text) {
+        runOnUiThread(() -> {
+            ViewGroup root = (ViewGroup) getContentView();
+            if (root == null) return;
+            if (statusView == null) {
+                statusView = new android.widget.TextView(this);
+                statusView.setTextColor(0xFFFFF4E4);
+                statusView.setTextSize(24);
+                statusView.setPadding(48, 28, 48, 28);
+                statusView.setBackgroundColor(0xCC000000);
+                android.widget.RelativeLayout.LayoutParams lp = new android.widget.RelativeLayout.LayoutParams(
+                        ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                lp.addRule(android.widget.RelativeLayout.CENTER_IN_PARENT);
+                root.addView(statusView, lp);
+            }
+            statusView.setText(text);
+            statusView.setVisibility(View.VISIBLE);
+            statusView.bringToFront();
+        });
+    }
+
+    private void hideStatusSoon() {
+        runOnUiThread(() -> {
+            if (statusView != null) statusView.postDelayed(() -> statusView.setVisibility(View.GONE), 3000);
+        });
     }
 
     // ---------------------------------------------------------------------------------------------
