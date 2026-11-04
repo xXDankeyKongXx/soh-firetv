@@ -1,0 +1,35 @@
+# Copies a finished Fire TV APK build into the "apk-builds" branch so it can be fetched with git.
+name: Publish APK to branch
+
+on:
+  push:
+    branches: [publish]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Download APK from the Fire TV build
+        uses: actions/download-artifact@v5
+        with:
+          name: soh-firetv-apk
+          run-id: 41790517122
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: apk
+
+      - name: Commit APK to apk-builds branch
+        run: |
+          ls -la apk
+          cd apk
+          git init -q
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git checkout -q -b apk-builds
+          git add -A
+          git commit -qm "Fire TV APK from build run 41790517122"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" apk-builds
