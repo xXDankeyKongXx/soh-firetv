@@ -1,30 +1,39 @@
 package com.dishii.soh;
 
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Environment;
+import android.util.JsonReader;
+import android.util.JsonToken;
+import android.util.JsonWriter;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Reads and writes Ship of Harkinian's settings file (SOH/shipofharkinian.json) and the app's own
  * render-size preference, and defines the video presets offered in the launcher.
+ *
+ * The file is edited as a tree that keeps every number exactly as written. This matters: the game
+ * loads 1.0 as a float setting but 1 as an integer one, and reading a float setting that was saved
+ * as an integer silently returns its default. (org.json would rewrite 1.0 as 1.)
  */
 final class SohConfig {
 
     static final String PREFS = "com.dishii.soh.prefs";
     static final String PREF_RENDER_HEIGHT = "renderHeight";
     static final String PREF_VIDEO_PRESET = "videoPreset";
+    static final long LOW_RAM_BYTES = 2560L * 1024 * 1024;
 
     static File sohRoot() {
         return new File(Environment.getExternalStorageDirectory(), "SOH");
@@ -75,14 +84,21 @@ final class SohConfig {
         return null;
     }
 
+    static String presetLabel(Context ctx) {
+        String id = prefs(ctx).getString(PREF_VIDEO_PRESET, "");
+        Preset p = presetById(id);
+        if (p != null) return p.title;
+        return "custom".equals(id) ? "Custom" : "Automatic";
+    }
+
     /** Writes the preset into the game's settings and the app's render-size preference. */
-    static void applyPreset(Context ctx, Preset p) throws IOException, JSONException {
-        JSONObject root = readConfig();
-        JSONObject settings = child(child(root, "CVars"), "gSettings");
-        settings.put("TextureFilter", p.textureFilter);
-        settings.put("InterpolationFPS", p.interpolationFps);
-        settings.put("LowResMode", p.lowResMode);
-        settings.put("MSAAValue", p.msaa);
+    static void applyPreset(Context ctx, Preset p) throws IOException {
+        Map<String, Object> root = readConfig();
+        Map<String, Object> s = child(child(root, "CVars"), "gSettings");
+        s.put("TextureFilter", new Num(p.textureFilter));
+        s.put("InterpolationFPS", new Num(p.interpolationFps));
+        s.put("LowResMode", new Num(p.lowResMode));
+        s.put("MSAAValue", new Num(p.msaa));
         writeConfig(root);
         prefs(ctx).edit()
                 .putInt(PREF_RENDER_HEIGHT, p.renderHeight)
@@ -90,19 +106,38 @@ final class SohConfig {
                 .apply();
     }
 
-    /** Individual settings, for the fine-tune rows under the presets. */
-    static void setGameSetting(String key, int value) throws IOException, JSONException {
-        JSONObject root = readConfig();
-        child(child(root, "CVars"), "gSettings").put(key, value);
+    /** Fills in integer gSettings values. Only missing keys unless force. Returns true if written. */
+    static boolean applyIntSettings(Map<String, Integer> values, boolean force) throws IOException {
+        boolean isNew = !configFile().exists();
+        Map<String, Object> root = readConfig();
+        Map<String, Object> s = child(child(root, "CVars"), "gSettings");
+        boolean changed = isNew;
+        for (Map.Entry<String, Integer> e : values.entrySet()) {
+            if (force || !s.containsKey(e.getKey())) {
+                s.put(e.getKey(), new Num(e.getValue()));
+                changed = true;
+            }
+        }
+        if (changed) writeConfig(root);
+        return changed;
+    }
+
+    static void setGameSetting(String key, int value) throws IOException {
+        Map<String, Object> root = readConfig();
+        child(child(root, "CVars"), "gSettings").put(key, new Num(value));
         writeConfig(root);
     }
 
+    @SuppressWarnings("unchecked")
     static int getGameSetting(String key, int fallback) {
         try {
-            JSONObject cvars = readConfig().optJSONObject("CVars");
-            JSONObject settings = cvars == null ? null : cvars.optJSONObject("gSettings");
-            return settings == null ? fallback : settings.optInt(key, fallback);
-        } catch (IOException | JSONException e) {
+            Object cvars = readConfig().get("CVars");
+            if (!(cvars instanceof Map)) return fallback;
+            Object settings = ((Map<String, Object>) cvars).get("gSettings");
+            if (!(settings instanceof Map)) return fallback;
+            Object v = ((Map<String, Object>) settings).get(key);
+            return v instanceof Num ? ((Num) v).intValue() : fallback;
+        } catch (IOException | RuntimeException e) {
             return fallback;
         }
     }
@@ -111,42 +146,132 @@ final class SohConfig {
         return ctx.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
     }
 
-    // ---- JSON helpers -----------------------------------------------------------------------
-
-    static JSONObject readConfig() throws IOException, JSONException {
-        File f = configFile();
-        if (!f.exists()) {
-            JSONObject root = new JSONObject();
-            root.put("ConfigVersion", 3); // current SoH config version: skip the legacy migrations
-            return root;
-        }
-        return new JSONObject(readText(f));
+    static boolean isLowRamDevice(Context ctx) {
+        ActivityManager am = (ActivityManager) ctx.getSystemService(Context.ACTIVITY_SERVICE);
+        if (am == null) return false;
+        ActivityManager.MemoryInfo mi = new ActivityManager.MemoryInfo();
+        am.getMemoryInfo(mi);
+        return mi.totalMem > 0 && mi.totalMem <= LOW_RAM_BYTES;
     }
 
-    static void writeConfig(JSONObject root) throws IOException, JSONException {
+    /** What MainActivity renders at on a TV when no preset was chosen. */
+    static int defaultTvRenderHeight(Context ctx) {
+        return isLowRamDevice(ctx) ? 720 : 1080;
+    }
+
+    // ---- Literal-preserving JSON tree ----------------------------------------------------------
+
+    /** A JSON number kept as its original text, so 1.0 stays 1.0. */
+    static final class Num extends Number {
+        final String literal;
+        Num(String literal) { this.literal = literal; }
+        Num(int v) { this.literal = Integer.toString(v); }
+        @Override public int intValue() { return (int) doubleValue(); }
+        @Override public long longValue() { return (long) doubleValue(); }
+        @Override public float floatValue() { return (float) doubleValue(); }
+        @Override public double doubleValue() {
+            try { return Double.parseDouble(literal); } catch (NumberFormatException e) { return 0; }
+        }
+        @Override public String toString() { return literal; }
+    }
+
+    private static final Object NULL = new Object();
+
+    static Map<String, Object> readConfig() throws IOException {
+        File f = configFile();
+        if (!f.exists()) {
+            Map<String, Object> root = new LinkedHashMap<>();
+            root.put("ConfigVersion", new Num(3)); // current SoH config version: skip legacy migrations
+            return root;
+        }
+        try (JsonReader r = new JsonReader(new InputStreamReader(new FileInputStream(f), StandardCharsets.UTF_8))) {
+            r.setLenient(true);
+            Object v = readValue(r);
+            if (!(v instanceof Map)) throw new IOException("Settings file isn't a JSON object");
+            @SuppressWarnings("unchecked") Map<String, Object> m = (Map<String, Object>) v;
+            return m;
+        } catch (IllegalStateException | NumberFormatException e) {
+            throw new IOException("Couldn't read " + f.getName() + ": " + e.getMessage());
+        }
+    }
+
+    private static Object readValue(JsonReader r) throws IOException {
+        JsonToken t = r.peek();
+        switch (t) {
+            case BEGIN_OBJECT: {
+                Map<String, Object> m = new LinkedHashMap<>();
+                r.beginObject();
+                while (r.hasNext()) m.put(r.nextName(), readValue(r));
+                r.endObject();
+                return m;
+            }
+            case BEGIN_ARRAY: {
+                List<Object> l = new ArrayList<>();
+                r.beginArray();
+                while (r.hasNext()) l.add(readValue(r));
+                r.endArray();
+                return l;
+            }
+            case NUMBER: return new Num(r.nextString()); // nextString keeps the literal text
+            case STRING: return r.nextString();
+            case BOOLEAN: return r.nextBoolean();
+            case NULL: r.nextNull(); return NULL;
+            default: r.skipValue(); return NULL;
+        }
+    }
+
+    static void writeConfig(Map<String, Object> root) throws IOException {
         File f = configFile();
         File parent = f.getParentFile();
         if (parent != null) parent.mkdirs();
         File tmp = new File(f.getPath() + ".tmp");
-        try (OutputStream out = new FileOutputStream(tmp)) {
-            out.write(root.toString(4).getBytes(StandardCharsets.UTF_8));
+        try (JsonWriter w = new JsonWriter(new OutputStreamWriter(new FileOutputStream(tmp), StandardCharsets.UTF_8))) {
+            w.setIndent("    ");
+            writeValue(w, root);
         }
-        f.delete();
-        if (!tmp.renameTo(f)) throw new IOException("Couldn't save " + f);
+        // Rename over the old file (atomic on the same volume); fall back to delete+rename.
+        if (!tmp.renameTo(f)) {
+            f.delete();
+            if (!tmp.renameTo(f)) throw new IOException("Couldn't save " + f);
+        }
     }
 
-    static JSONObject child(JSONObject parent, String key) throws JSONException {
-        JSONObject c = parent.optJSONObject(key);
-        if (c == null) {
-            c = new JSONObject();
-            parent.put(key, c);
+    @SuppressWarnings("unchecked")
+    private static void writeValue(JsonWriter w, Object v) throws IOException {
+        if (v instanceof Map) {
+            w.beginObject();
+            for (Map.Entry<String, Object> e : ((Map<String, Object>) v).entrySet()) {
+                w.name(e.getKey());
+                writeValue(w, e.getValue());
+            }
+            w.endObject();
+        } else if (v instanceof List) {
+            w.beginArray();
+            for (Object o : (List<Object>) v) writeValue(w, o);
+            w.endArray();
+        } else if (v instanceof Num) {
+            w.value((Num) v); // JsonWriter writes Number.toString(): the original literal
+        } else if (v instanceof String) {
+            w.value((String) v);
+        } else if (v instanceof Boolean) {
+            w.value((Boolean) v);
+        } else {
+            w.nullValue();
         }
-        return c;
+    }
+
+    @SuppressWarnings("unchecked")
+    static Map<String, Object> child(Map<String, Object> parent, String key) {
+        Object c = parent.get(key);
+        if (c instanceof Map) return (Map<String, Object>) c;
+        Map<String, Object> m = new LinkedHashMap<>();
+        parent.put(key, m);
+        return m;
     }
 
     static String readText(File f) throws IOException {
-        try (InputStream in = new FileInputStream(f)) { // Files.readAllBytes needs API 26; minSdk is 24
-            ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+        try (FileInputStream in = new FileInputStream(f)) {
+            java.io.ByteArrayOutputStream bytes = new java.io.ByteArrayOutputStream();
             byte[] buf = new byte[8192];
             int n;
             while ((n = in.read(buf)) != -1) bytes.write(buf, 0, n);

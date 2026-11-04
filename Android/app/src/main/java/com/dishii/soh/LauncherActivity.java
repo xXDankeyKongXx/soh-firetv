@@ -11,7 +11,9 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.os.Build;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.os.Environment;
 import android.text.InputType;
 import android.text.TextUtils;
@@ -37,7 +39,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -74,6 +77,8 @@ public class LauncherActivity extends Activity {
     private String query = null;
     private List<GameBananaApi.Category> categories = null;
     private int browseRequest = 0;
+    private final List<AlertDialog> dialogs = new ArrayList<>();
+    private boolean storageDeniedOnce = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,12 +87,34 @@ public class LauncherActivity extends Activity {
         buildShell();
         showPane("play");
         if (!hasStorage()) requestStorage();
+        else io.execute(() -> ModInstaller.cleanupStaging(getCacheDir()));
     }
 
     @Override
     protected void onDestroy() {
+        for (AlertDialog d : dialogs) if (d.isShowing()) d.dismiss();
+        dialogs.clear();
         io.shutdownNow();
+        ImageLoader.reset();
         super.onDestroy();
+    }
+
+    /** Background callbacks must not touch a closed launcher (the game shares this process). */
+    private boolean alive() {
+        return !isFinishing() && !isDestroyed();
+    }
+
+    private void ui(Runnable r) {
+        runOnUiThread(() -> { if (alive()) r.run(); });
+    }
+
+    private AlertDialog show(AlertDialog.Builder b) {
+        AlertDialog d = b.create();
+        if (!alive()) return d;
+        dialogs.add(d);
+        d.setOnDismissListener(x -> dialogs.remove(d));
+        d.show();
+        return d;
     }
 
     // =============================================================================================
@@ -179,23 +206,32 @@ public class LauncherActivity extends Activity {
         banner.setScaleType(ImageView.ScaleType.FIT_START);
         col.addView(banner, new LinearLayout.LayoutParams(dp(480), dp(270)));
 
-        TextView play = button("▶   Play Ocarina of Time", 24);
+        boolean running = MainActivity.sGameRunning;
+        TextView play = button(running ? "▶   Resume game" : "▶   Play Ocarina of Time", 24);
         play.setTextColor(GOLD);
         play.setOnClickListener(v -> startGame());
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(dp(480), dp(72));
         lp.topMargin = dp(16);
         col.addView(play, lp);
 
-        SohConfig.Preset preset = SohConfig.presetById(
-                SohConfig.prefs(this).getString(SohConfig.PREF_VIDEO_PRESET, ""));
-        int enabled = 0, total = 0;
-        if (hasStorage()) {
-            for (ModInstaller.InstalledMod m : ModInstaller.listInstalled()) { total++; if (m.enabled) enabled++; }
-        }
-        TextView info = text("Video: " + (preset != null ? preset.title : "Automatic") + "\n"
-                + "Mods: " + enabled + " enabled" + (total > enabled ? " (" + (total - enabled) + " disabled)" : ""), 16, MUTED, false);
+        TextView info = text("Video: " + SohConfig.presetLabel(this) + "\nMods: …", 16, MUTED, false);
         info.setPadding(0, dp(16), 0, 0);
         col.addView(info);
+        if (hasStorage()) {
+            io.execute(() -> {
+                int enabled = 0, total = 0;
+                for (ModInstaller.InstalledMod m : ModInstaller.listInstalled()) { total++; if (m.enabled) enabled++; }
+                final int e = enabled, t = total;
+                ui(() -> info.setText("Video: " + SohConfig.presetLabel(this) + "\nMods: " + e + " enabled"
+                        + (t > e ? " (" + (t - e) + " disabled)" : "")));
+            });
+        }
+        if (running) {
+            TextView warn = text("The game is still running. Video and mod changes apply after you quit it "
+                    + "(Enhancements menu → power button) and start again.", 14, GOLD, false);
+            warn.setPadding(0, dp(10), 0, 0);
+            col.addView(warn);
+        }
 
         TextView tip = text("In game: hold Menu ≡ (or press Select on a gamepad) for the Enhancements menu.", 14, MUTED, false);
         tip.setPadding(0, dp(10), 0, 0);
@@ -242,7 +278,7 @@ public class LauncherActivity extends Activity {
         }
 
         col.addView(header("Fine-tune", null));
-        int height = SohConfig.prefs(this).getInt(SohConfig.PREF_RENDER_HEIGHT, 720);
+        int height = SohConfig.prefs(this).getInt(SohConfig.PREF_RENDER_HEIGHT, SohConfig.defaultTvRenderHeight(this));
         col.addView(cycleRow("Render resolution", new String[] { "480p", "720p", "1080p", "Native" },
                 new int[] { 480, 720, 1080, 0 }, height, v -> {
                     SohConfig.prefs(this).edit().putInt(SohConfig.PREF_RENDER_HEIGHT, v)
@@ -375,11 +411,10 @@ public class LauncherActivity extends Activity {
         io.execute(() -> {
             try {
                 GameBananaApi.Page result = q != null ? GameBananaApi.search(q, p) : GameBananaApi.browse(p, s, cat);
-                Map<Integer, ModInstaller.InstalledMod> installed =
-                        hasStorage() ? ModInstaller.installedById() : new java.util.HashMap<>();
-                runOnUiThread(() -> { if (request == browseRequest && "browse".equals(currentPane)) showPage(result, installed); });
+                Set<Integer> installed = hasStorage() ? ModInstaller.installedIds() : new java.util.HashSet<>();
+                ui(() -> { if (request == browseRequest && "browse".equals(currentPane)) showPage(result, installed); });
             } catch (Exception e) {
-                runOnUiThread(() -> {
+                ui(() -> {
                     if (request != browseRequest) return;
                     browseStatus.setText("Couldn't reach GameBanana: " + e.getMessage()
                             + "\nCheck the TV's internet connection, then try again.");
@@ -392,7 +427,7 @@ public class LauncherActivity extends Activity {
         });
     }
 
-    private void showPage(GameBananaApi.Page result, Map<Integer, ModInstaller.InstalledMod> installed) {
+    private void showPage(GameBananaApi.Page result, Set<Integer> installed) {
         browseList.removeAllViews();
         String what = query != null ? "Results for \"" + query + "\"" : (category == null ? "All mods" : category.name);
         browseStatus.setText(what + "  ·  " + result.total + " mods");
@@ -408,11 +443,18 @@ public class LauncherActivity extends Activity {
         }
         View firstCard = null;
         for (GameBananaApi.ModSummary m : result.mods) {
-            View card = modCard(m, installed.containsKey(m.id));
+            View card = modCard(m, installed.contains(m.id));
             browseList.addView(card, cardParams());
             if (firstCard == null) firstCard = card;
         }
-        firstCard.requestFocus();
+        // Only pull focus into the list if the user is still in the content area (not the sidebar).
+        View focused = getCurrentFocus();
+        if (focused == null || isInside(focused, content)) firstCard.requestFocus();
+    }
+
+    private static boolean isInside(View v, ViewGroup parent) {
+        for (android.view.ViewParent p = v.getParent(); p != null; p = p.getParent()) if (p == parent) return true;
+        return false;
     }
 
     private View modCard(GameBananaApi.ModSummary m, boolean isInstalled) {
@@ -451,13 +493,12 @@ public class LauncherActivity extends Activity {
         input.setImeOptions(EditorInfo.IME_ACTION_SEARCH);
         input.setHint("e.g. 3DS, Link, HD textures");
         if (query != null) input.setText(query);
-        AlertDialog d = new AlertDialog.Builder(this)
+        AlertDialog d = show(new AlertDialog.Builder(this)
                 .setTitle("Search GameBanana")
                 .setView(input)
                 .setPositiveButton("Search", (x, w) -> runSearch(input.getText().toString()))
                 .setNeutralButton("Clear", (x, w) -> runSearch(""))
-                .setNegativeButton("Cancel", null)
-                .create();
+                .setNegativeButton("Cancel", null));
         input.setOnEditorActionListener((v, actionId, e) -> {
             if (actionId == EditorInfo.IME_ACTION_SEARCH || actionId == EditorInfo.IME_ACTION_DONE) {
                 d.dismiss();
@@ -466,7 +507,6 @@ public class LauncherActivity extends Activity {
             }
             return false;
         });
-        d.show();
         input.requestFocus();
     }
 
@@ -484,9 +524,9 @@ public class LauncherActivity extends Activity {
             io.execute(() -> {
                 try {
                     List<GameBananaApi.Category> list = GameBananaApi.categories();
-                    runOnUiThread(() -> { categories = list; pickCategory(); });
+                    ui(() -> { categories = list; if ("browse".equals(currentPane)) pickCategory(); });
                 } catch (Exception e) {
-                    runOnUiThread(() -> error("Couldn't load categories", e));
+                    ui(() -> error("Couldn't load categories", e));
                 }
             });
             return;
@@ -497,7 +537,7 @@ public class LauncherActivity extends Activity {
             GameBananaApi.Category c = categories.get(i);
             names[i + 1] = c.name + (c.count > 0 ? "  (" + c.count + ")" : "");
         }
-        new AlertDialog.Builder(this)
+        show(new AlertDialog.Builder(this)
                 .setTitle("Category")
                 .setItems(names, (d, which) -> {
                     category = which == 0 ? null : categories.get(which - 1);
@@ -505,20 +545,21 @@ public class LauncherActivity extends Activity {
                     query = null; searchButton.setText("Search…");
                     page = 1;
                     loadBrowse();
-                })
-                .show();
+                }));
     }
 
     // ---- Mod details + install ----
 
     private void openMod(GameBananaApi.ModSummary m) {
-        AlertDialog loading = new AlertDialog.Builder(this).setMessage("Loading " + m.name + "…").show();
+        AtomicBoolean cancelled = new AtomicBoolean(false);
+        AlertDialog loading = show(new AlertDialog.Builder(this).setMessage("Loading " + m.name + "…")
+                .setOnCancelListener(x -> cancelled.set(true)));
         io.execute(() -> {
             try {
                 GameBananaApi.ModDetails d = GameBananaApi.details(m.id);
-                runOnUiThread(() -> { loading.dismiss(); showModDialog(m, d); });
+                ui(() -> { loading.dismiss(); if (!cancelled.get()) showModDialog(m, d); });
             } catch (Exception e) {
-                runOnUiThread(() -> { loading.dismiss(); error("Couldn't load this mod", e); });
+                ui(() -> { loading.dismiss(); if (!cancelled.get()) error("Couldn't load this mod", e); });
             }
         });
     }
@@ -575,15 +616,19 @@ public class LauncherActivity extends Activity {
         open.setPadding(0, dp(8), 0, 0);
         col.addView(open);
 
-        dialog[0] = new AlertDialog.Builder(this)
+        dialog[0] = show(new AlertDialog.Builder(this)
                 .setView(scroll(col))
-                .setNegativeButton("Close", null)
-                .show();
+                .setNegativeButton("Close", null));
         if (firstFile != null) firstFile.requestFocus();
     }
 
     private void install(GameBananaApi.ModSummary m, GameBananaApi.ModFile f) {
         if (!ensureStorage()) return;
+        if (!ModInstaller.tryBegin()) {
+            toast("Another mod is still installing.");
+            return;
+        }
+        AtomicBoolean cancel = new AtomicBoolean(false);
         LinearLayout box = column();
         box.setPadding(dp(24), dp(20), dp(24), dp(12));
         TextView stage = text("Starting download…", 16, TEXT, false);
@@ -591,14 +636,15 @@ public class LauncherActivity extends Activity {
         bar.setMax(1000);
         box.addView(stage);
         box.addView(bar, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dp(24)));
-        AlertDialog progress = new AlertDialog.Builder(this)
+        AlertDialog progress = show(new AlertDialog.Builder(this)
                 .setTitle("Installing " + m.name)
                 .setView(box)
                 .setCancelable(false)
-                .show();
+                .setNegativeButton("Cancel", (d, w) -> cancel.set(true)));
         io.execute(() -> {
+            boolean handedOff = false;
             try {
-                int n = ModInstaller.install(m, f, getCacheDir(), (s, done, total) -> runOnUiThread(() -> {
+                ModInstaller.Staged staged = ModInstaller.prepare(m, f, getCacheDir(), (s, done, total) -> ui(() -> {
                     if (total > 0) {
                         bar.setIndeterminate(false);
                         bar.setProgress((int) (done * 1000 / total));
@@ -607,18 +653,79 @@ public class LauncherActivity extends Activity {
                         bar.setIndeterminate(true);
                         stage.setText(s);
                     }
-                }));
-                runOnUiThread(() -> {
+                }), cancel);
+                if (cancel.get() || !alive()) {
+                    ModInstaller.discard(staged);
+                    return;
+                }
+                handedOff = true;
+                ui(() -> {
                     progress.dismiss();
-                    new AlertDialog.Builder(this)
-                            .setTitle("Installed")
-                            .setMessage(m.name + " is installed (" + n + " mod file" + (n == 1 ? "" : "s")
-                                    + "). It will load the next time you start the game.")
-                            .setPositiveButton("OK", (x, w) -> { if ("browse".equals(currentPane)) loadBrowse(); })
-                            .show();
+                    if (staged.files.size() == 1) commitInstall(staged, staged.files);
+                    else chooseFiles(staged);
                 });
-            } catch (Exception e) {
-                runOnUiThread(() -> { progress.dismiss(); error("Couldn't install " + m.name, e); });
+            } catch (ModInstaller.CancelledException e) {
+                ui(() -> toast("Install cancelled"));
+            } catch (Throwable e) { // includes library Errors, which must not take the game down
+                ui(() -> { progress.dismiss(); error("Couldn't install " + m.name, e); });
+            } finally {
+                if (!handedOff) {
+                    ModInstaller.end();
+                    ui(progress::dismiss);
+                }
+            }
+        });
+    }
+
+    /** "Pick a variant" packs: let the user choose which mod files to keep (all are selected). */
+    private void chooseFiles(ModInstaller.Staged staged) {
+        String[] labels = new String[staged.files.size()];
+        boolean[] checked = new boolean[labels.length];
+        for (int i = 0; i < labels.length; i++) {
+            ModInstaller.StagedFile sf = staged.files.get(i);
+            labels[i] = sf.file.getName() + "\n" + sf.label;
+            checked[i] = true;
+        }
+        final boolean[] done = { false };
+        AlertDialog d = show(new AlertDialog.Builder(this)
+                .setTitle("This download has " + labels.length + " mod files")
+                .setMultiChoiceItems(labels, checked, (x, which, isChecked) -> checked[which] = isChecked)
+                .setPositiveButton("Install selected", (x, w) -> {
+                    done[0] = true;
+                    List<ModInstaller.StagedFile> keep = new ArrayList<>();
+                    for (int i = 0; i < checked.length; i++) if (checked[i]) keep.add(staged.files.get(i));
+                    if (keep.isEmpty()) {
+                        ModInstaller.discard(staged);
+                        ModInstaller.end();
+                        toast("Nothing selected; install cancelled");
+                    } else {
+                        commitInstall(staged, keep);
+                    }
+                })
+                .setNegativeButton("Cancel", (x, w) -> { }));
+        d.setOnDismissListener(x -> {
+            dialogs.remove(d);
+            if (!done[0]) {
+                ModInstaller.discard(staged);
+                ModInstaller.end();
+            }
+        });
+    }
+
+    private void commitInstall(ModInstaller.Staged staged, List<ModInstaller.StagedFile> keep) {
+        io.execute(() -> {
+            try {
+                File where = ModInstaller.commit(staged, keep);
+                int n = keep.size();
+                ui(() -> show(new AlertDialog.Builder(this)
+                        .setTitle("Installed")
+                        .setMessage(staged.mod.name + " is installed (" + n + " mod file" + (n == 1 ? "" : "s")
+                                + ", in mods/" + where.getName() + "). It loads the next time the game starts.")
+                        .setPositiveButton("OK", (x, w) -> { if ("browse".equals(currentPane)) loadBrowse(); })));
+            } catch (Throwable e) {
+                ui(() -> error("Couldn't install " + staged.mod.name, e));
+            } finally {
+                ModInstaller.end();
             }
         });
     }
@@ -680,15 +787,14 @@ public class LauncherActivity extends Activity {
             row.addView(toggle, new LinearLayout.LayoutParams(dp(140), dp(44)));
 
             TextView remove = button("Remove", 15);
-            remove.setOnClickListener(v -> new AlertDialog.Builder(this)
+            remove.setOnClickListener(v -> show(new AlertDialog.Builder(this)
                     .setTitle("Remove " + m.name + "?")
                     .setMessage("This deletes the mod's files from the TV.")
                     .setPositiveButton("Remove", (d, w) -> {
                         try { ModInstaller.delete(m); showPane("installed"); }
                         catch (Exception e) { error("Couldn't remove " + m.name, e); }
                     })
-                    .setNegativeButton("Cancel", null)
-                    .show());
+                    .setNegativeButton("Cancel", null)));
             LinearLayout.LayoutParams rp = new LinearLayout.LayoutParams(dp(110), dp(44));
             rp.leftMargin = dp(8);
             row.addView(remove, rp);
@@ -720,6 +826,18 @@ public class LauncherActivity extends Activity {
     }
 
     private void requestStorage() {
+        if (storageDeniedOnce && Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+                && !shouldShowRequestPermissionRationale(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+            // "Don't ask again" was chosen: the prompt won't appear, so open the app's settings page.
+            try {
+                startActivity(new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
+                        Uri.parse("package:" + getPackageName())));
+                toast("Turn on Storage under Permissions, then come back.");
+            } catch (Exception e) {
+                toast("Allow storage for this app in Settings → Applications.");
+            }
+            return;
+        }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             requestPermissions(new String[] { Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE }, STORAGE_REQUEST);
@@ -730,7 +848,10 @@ public class LauncherActivity extends Activity {
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == STORAGE_REQUEST) {
-            if (!hasStorage()) toast("Storage access is needed for mods and settings.");
+            if (!hasStorage()) {
+                storageDeniedOnce = true;
+                toast("Storage access is needed for mods and settings.");
+            }
             showPane(currentPane);
         }
     }
@@ -832,11 +953,11 @@ public class LauncherActivity extends Activity {
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 
-    private void error(String title, Exception e) {
-        new AlertDialog.Builder(this)
+    private void error(String title, Throwable e) {
+        if (!alive()) return;
+        show(new AlertDialog.Builder(this)
                 .setTitle(title)
                 .setMessage(e.getMessage() != null ? e.getMessage() : e.toString())
-                .setPositiveButton("OK", null)
-                .show();
+                .setPositiveButton("OK", null));
     }
 }

@@ -44,8 +44,6 @@ import android.view.View;
 import android.widget.ImageView;
 
 import java.util.concurrent.Executors;
-import org.json.JSONException;
-import org.json.JSONObject;
 import java.nio.charset.StandardCharsets;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
@@ -97,6 +95,8 @@ public class MainActivity extends SDLActivity{
     private boolean romChooserShowing = false;
     private boolean forceTvPreset = false;
     private RemoteInput remote;
+    /** True while the game activity exists; the launcher uses it to offer "Resume" instead of a fresh start. */
+    static volatile boolean sGameRunning = false;
     private VoiceControl voice;
     private int pendingMenuRequest = 0;
 
@@ -104,6 +104,7 @@ public class MainActivity extends SDLActivity{
     protected void onCreate(Bundle savedInstanceState) {
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        sGameRunning = true;
 
         preferences = getSharedPreferences("com.dishii.soh.prefs",Context.MODE_PRIVATE);
         isTv = detectTv();
@@ -179,6 +180,7 @@ public class MainActivity extends SDLActivity{
 
     @Override
     protected void onDestroy() {
+        sGameRunning = false;
         if (voice != null) voice.release();
         super.onDestroy();
     }
@@ -297,7 +299,7 @@ public class MainActivity extends SDLActivity{
     // Render into a smaller surface and let the display hardware upscale it for free.
     // Fire TV GPUs struggle at 1080p+, and the TV scaler does a good job with 720p.
     private void applyRenderResolution() {
-        int targetHeight = preferences.getInt("renderHeight", isTv ? defaultTvRenderHeight() : 0);
+        int targetHeight = preferences.getInt("renderHeight", isTv ? SohConfig.defaultTvRenderHeight(this) : 0);
         if (targetHeight <= 0 || mSurface == null) return;
 
         DisplayMetrics real = new DisplayMetrics();
@@ -344,39 +346,24 @@ public class MainActivity extends SDLActivity{
 
     private void applyTvConfigPreset(File sohRoot) {
         if (!isTv) return;
-        File configFile = new File(sohRoot, "shipofharkinian.json");
+        java.util.Map<String, Integer> values = new java.util.LinkedHashMap<>();
+        // Hardware bilinear instead of the shader-based 3-point N64 filter: 1 texture fetch, not 3.
+        values.put("TextureFilter", 1);
+        // MSAA is expensive on Mali tilers and the cause of the known black-screen bug.
+        values.put("MSAAValue", 1);
+        // Original 20 fps logic rate; raise in the launcher's Video page if the TV keeps up.
+        values.put("InterpolationFPS", 20);
+        // Menu size index (0.75x, 1x, 1.5x, 2x). 1.5x reads well from a couch at 720p.
+        values.put("ImGuiScale", 2);
+        // Navigate the Enhancements menu with the remote/gamepad.
+        values.put("ControlNav", 1);
         try {
-            JSONObject root;
-            boolean isNew = !configFile.exists();
-            if (isNew) {
-                root = new JSONObject();
-                root.put("ConfigVersion", 3); // current SoH config version: skip the legacy migrations
-            } else {
-                root = new JSONObject(readText(configFile));
+            // Edits the file without reformatting numbers (see SohConfig); only fills in missing keys
+            // unless the applyTvPreset extra was passed.
+            if (SohConfig.applyIntSettings(values, forceTvPreset)) {
+                Log.i(TAG, "Applied TV preset" + (forceTvPreset ? " (forced)" : ""));
             }
-            JSONObject cvars = child(root, "CVars");
-            JSONObject settings = child(cvars, "gSettings");
-            boolean force = forceTvPreset;
-            boolean changed = isNew;
-
-            // Hardware bilinear instead of the shader-based 3-point N64 filter: 1 texture fetch, not 3.
-            changed |= put(settings, "TextureFilter", 1, force);
-            // MSAA is expensive on Mali tilers and the cause of the known black-screen bug.
-            changed |= put(settings, "MSAAValue", 1, force);
-            // Original 20 fps logic rate; raise in Settings > Graphics if the TV keeps up.
-            changed |= put(settings, "InterpolationFPS", 20, force);
-            // Menu size index (0.75x, 1x, 1.5x, 2x). 1.5x reads well from a couch at 720p.
-            changed |= put(settings, "ImGuiScale", 2, force);
-            // Navigate the Enhancements menu with the remote/gamepad.
-            changed |= put(settings, "ControlNav", 1, force);
-
-            if (changed) {
-                try (OutputStream out = new FileOutputStream(configFile)) {
-                    out.write(root.toString(4).getBytes(StandardCharsets.UTF_8));
-                }
-                Log.i(TAG, "Applied TV preset to " + configFile + (force ? " (forced)" : ""));
-            }
-        } catch (IOException | JSONException e) {
+        } catch (IOException e) {
             Log.w(TAG, "Couldn't apply TV preset", e);
         }
         forceTvPreset = false;
@@ -392,20 +379,7 @@ public class MainActivity extends SDLActivity{
         }
     }
 
-    private static JSONObject child(JSONObject parent, String key) throws JSONException {
-        JSONObject c = parent.optJSONObject(key);
-        if (c == null) {
-            c = new JSONObject();
-            parent.put(key, c);
-        }
-        return c;
-    }
 
-    private static boolean put(JSONObject o, String key, Object value, boolean force) throws JSONException {
-        if (!force && o.has(key)) return false;
-        o.put(key, value);
-        return true;
-    }
 
     public static void waitForSetupFromNative() {
         try {

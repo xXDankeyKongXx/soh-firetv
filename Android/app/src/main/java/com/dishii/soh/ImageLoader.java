@@ -21,6 +21,13 @@ final class ImageLoader {
     };
     private static final ExecutorService POOL = Executors.newFixedThreadPool(3);
     private static final Handler MAIN = new Handler(Looper.getMainLooper());
+    private static volatile int generation = 0;
+
+    /** Drop the cache and any queued fetches (when the launcher closes, before the game uses the RAM). */
+    static void reset() {
+        generation++;
+        CACHE.evictAll();
+    }
 
     static void load(ImageView view, String url, int maxWidth) {
         view.setTag(url);
@@ -28,8 +35,11 @@ final class ImageLoader {
         Bitmap cached = CACHE.get(url);
         if (cached != null) { view.setImageBitmap(cached); return; }
         view.setImageDrawable(null);
+        final int gen = generation;
         POOL.execute(() -> {
+            if (gen != generation || !url.equals(view.getTag())) return; // stale request
             Bitmap bmp = fetch(url, maxWidth);
+            if (gen != generation) return;
             if (bmp == null) return;
             CACHE.put(url, bmp);
             MAIN.post(() -> { if (url.equals(view.getTag())) view.setImageBitmap(bmp); });
