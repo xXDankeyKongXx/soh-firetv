@@ -1,0 +1,1996 @@
+{
+    "_aMetadata": {
+        "_nRecordCount": 183,
+        "_nPerpage": 15,
+        "_bIsComplete": false
+    },
+    "_aRecords": [
+        {
+            "_idRow": 492436,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Shipshape HD HUD Mod (WIP)",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/492436",
+            "_tsDateAdded": 1706360747,
+            "_tsDateModified": 1793760536,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "MM OoT Packs with Double Defense & Magic",
+                        "_sFile": "65b4fe62e368f.jpg",
+                        "_sFile220": "220-90_65b4fe62e368f.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_65b4fe62e368f.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_65b4fe62e368f.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "HD MM Packs",
+                        "_sFile": "65b4fe6324e4f.jpg",
+                        "_sFile100": "100-90_65b4fe6324e4f.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "HD OoT Packs with Double Defense & Magic",
+                        "_sFile": "65b4fe62e7bed.jpg",
+                        "_sFile100": "100-90_65b4fe62e7bed.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "HD OoT Packs",
+                        "_sFile": "65b4fe62b9525.jpg",
+                        "_sFile100": "100-90_65b4fe62b9525.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1383035,
+                "_sName": "turpinator",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1383035",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/69557c8489bdc.png",
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/66569ca445e02.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Textures",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22569",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/6450cdd6e4276.png"
+            },
+            "_aSubCategory": {
+                "_sName": "HUD",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22794",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64655ff791e2e.png"
+            },
+            "_sVersion": "V1.1",
+            "_tsDateUpdated": 1793760597,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 6,
+            "_nPostCount": 3,
+            "_bWasFeatured": false,
+            "_nViewCount": 53331,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 577257,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Alice Tendou + Extra (Blue Archive Modpack)",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/577257",
+            "_tsDateAdded": 1740276185,
+            "_tsDateModified": 1793752758,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67baefe748b20.jpg",
+                        "_sFile220": "220-90_67baefe748b20.jpg",
+                        "_hFile220": 143,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_67baefe748b20.jpg",
+                        "_hFile530": 344,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_67baefe748b20.jpg",
+                        "_hFile100": 65,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69c37a0a32d25.jpg",
+                        "_sFile100": "100-90_69c37a0a32d25.jpg",
+                        "_hFile100": 83,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c95dbb7.jpg",
+                        "_sFile100": "100-90_67ba79c95dbb7.jpg",
+                        "_hFile100": 95,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79caed7f1.jpg",
+                        "_sFile100": "100-90_67ba79caed7f1.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c9bc3a7.jpg",
+                        "_sFile100": "100-90_67ba79c9bc3a7.jpg",
+                        "_hFile100": 79,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c510196.jpg",
+                        "_sFile100": "100-90_67ba79c510196.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67dce971209ad.jpg",
+                        "_sFile100": "100-90_67dce971209ad.jpg",
+                        "_hFile100": 63,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c608926.jpg",
+                        "_sFile100": "100-90_67ba79c608926.jpg",
+                        "_hFile100": 114,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c46bf02.jpg",
+                        "_sFile100": "100-90_67ba79c46bf02.jpg",
+                        "_hFile100": 79,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c54b3aa.jpg",
+                        "_sFile100": "100-90_67ba79c54b3aa.jpg",
+                        "_hFile100": 78,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c2431dc.jpg",
+                        "_sFile100": "100-90_67ba79c2431dc.jpg",
+                        "_hFile100": 76,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba7af40dd33.jpg",
+                        "_sFile100": "100-90_67ba7af40dd33.jpg",
+                        "_hFile100": 63,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c9e5a5a.jpg",
+                        "_sFile100": "100-90_67ba79c9e5a5a.jpg",
+                        "_hFile100": 75,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c968a6d.jpg",
+                        "_sFile100": "100-90_67ba79c968a6d.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c90e98b.jpg",
+                        "_sFile100": "100-90_67ba79c90e98b.jpg",
+                        "_hFile100": 99,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c7e3af8.jpg",
+                        "_sFile100": "100-90_67ba79c7e3af8.jpg",
+                        "_hFile100": 95,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c63f7dc.jpg",
+                        "_sFile100": "100-90_67ba79c63f7dc.jpg",
+                        "_hFile100": 95,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79c92fdc5.jpg",
+                        "_sFile100": "100-90_67ba79c92fdc5.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba79cb26511.jpg",
+                        "_sFile100": "100-90_67ba79cb26511.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67ba7a1cde883.jpg",
+                        "_sFile100": "100-90_67ba7a1cde883.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1511678,
+                "_sName": "HerosLight",
+                "_bIsOnline": false,
+                "_bHasRipe": true,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1511678",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/591408c27a58c.png",
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/5914097e882cd.png",
+                "_sUpicUrl": "https:\/\/images.gamebanana.com\/img\/upic\/59880d968ec21.gif"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_sVersion": "",
+            "_tsDateUpdated": 1793752695,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 26,
+            "_nPostCount": 25,
+            "_bWasFeatured": false,
+            "_nViewCount": 34347,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 725316,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Frodo + Aragorn Costumes for Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/725316",
+            "_tsDateAdded": 1791426200,
+            "_tsDateModified": 1793299312,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ac6fd65637be.jpg",
+                        "_sFile220": "220-90_6ac6fd65637be.jpg",
+                        "_hFile220": 138,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6ac6fd65637be.jpg",
+                        "_hFile530": 331,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6ac6fd65637be.jpg",
+                        "_hFile100": 63,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ac6fb1f45c6e.jpg",
+                        "_sFile100": "100-90_6ac6fb1f45c6e.jpg",
+                        "_hFile100": 63,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ae391e140516.jpg",
+                        "_sFile100": "100-90_6ae391e140516.jpg",
+                        "_hFile100": 63,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ae391e0d2c4e.jpg",
+                        "_sFile100": "100-90_6ae391e0d2c4e.jpg"
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ae391e1024c3.jpg",
+                        "_sFile100": "100-90_6ae391e1024c3.jpg",
+                        "_hFile100": 63,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ae392e2166e9.jpg",
+                        "_sFile100": "100-90_6ae392e2166e9.jpg",
+                        "_hFile100": 89,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ac6fd7e6c77b.jpg",
+                        "_sFile100": "100-90_6ac6fd7e6c77b.jpg",
+                        "_hFile100": 25,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 2618212,
+                "_sName": "DanatheElf",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/2618212",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/644eb01c5510f.jpg",
+                "_aClearanceLevels": [
+                    "2ship Manager",
+                    "SoH Manager",
+                    "Starship Manager",
+                    "Ghostship Manager",
+                    "Spaghetti Manager",
+                    "Lighthouse Manager",
+                    "PaperBoat Manager"
+                ]
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Both Player Models - Unaltered Skeleton",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/31637",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/66d5fa90b67c4.png"
+            },
+            "_sVersion": "",
+            "_tsDateUpdated": 1793299455,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 10,
+            "_nPostCount": 5,
+            "_bWasFeatured": false,
+            "_nViewCount": 1198,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 646875,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "3DS Player Animations + Ganon",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/646875",
+            "_tsDateAdded": 1768689653,
+            "_tsDateModified": 1793141142,
+            "_bHasFiles": true,
+            "_aTags": [
+                "Software Used: Blender"
+            ],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69c44c12d50a0.jpg",
+                        "_sFile220": "220-90_69c44c12d50a0.jpg",
+                        "_hFile220": 147,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_69c44c12d50a0.jpg",
+                        "_hFile530": 353,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_69c44c12d50a0.jpg",
+                        "_hFile100": 67,
+                        "_wFile100": 100,
+                        "_sFile800": "800-90_69c44c12d50a0.jpg",
+                        "_hFile800": 533,
+                        "_wFile800": 800
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3030017,
+                "_sName": "SisterLemon7",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3030017",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/657a683390041.jpg",
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/69cdae78d3c3a.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Animations",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/42311",
+                "_sIconUrl": ""
+            },
+            "_sVersion": "2.1.1",
+            "_tsDateUpdated": 1793141230,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 75,
+            "_nPostCount": 140,
+            "_bWasFeatured": true,
+            "_nViewCount": 49995,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 719724,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Play as Dark Link. (+ Custom Equipment!)",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/719724",
+            "_tsDateAdded": 1790080170,
+            "_tsDateModified": 1792876496,
+            "_bHasFiles": true,
+            "_aTags": [
+                "Software Used: Blender"
+            ],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab7d9b34b0.jpg",
+                        "_sFile220": "220-90_6adab7d9b34b0.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6adab7d9b34b0.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6adab7d9b34b0.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab86894dcc.jpg",
+                        "_sFile100": "100-90_6adab86894dcc.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab873dd760.jpg",
+                        "_sFile100": "100-90_6adab873dd760.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab873ec983.jpg",
+                        "_sFile100": "100-90_6adab873ec983.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab872e3ba9.jpg",
+                        "_sFile100": "100-90_6adab872e3ba9.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab87387dac.jpg",
+                        "_sFile100": "100-90_6adab87387dac.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab8739cb90.jpg",
+                        "_sFile100": "100-90_6adab8739cb90.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab8742042c.jpg",
+                        "_sFile100": "100-90_6adab8742042c.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab8eed02ce.jpg",
+                        "_sFile100": "100-90_6adab8eed02ce.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab8f990938.jpg",
+                        "_sFile100": "100-90_6adab8f990938.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab8f902898.jpg",
+                        "_sFile100": "100-90_6adab8f902898.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab8f91fe74.jpg",
+                        "_sFile100": "100-90_6adab8f91fe74.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6adab8fa74da6.jpg",
+                        "_sFile100": "100-90_6adab8fa74da6.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3816586,
+                "_sName": "JackShenLong",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3816586",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6aa1e5a481964.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Both Player Models - Unaltered Skeleton",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/31637",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/66d5fa90b67c4.png"
+            },
+            "_sVersion": "3.1",
+            "_tsDateUpdated": 1792876539,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 14,
+            "_nPostCount": 18,
+            "_bWasFeatured": false,
+            "_nViewCount": 2350,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 730346,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Tingle's Dream (Navi Replacement)",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/730346",
+            "_tsDateAdded": 1792571808,
+            "_tsDateModified": 1792697588,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Link can't believe what he's seeing.",
+                        "_sFile": "6ad879185cfaa.jpg",
+                        "_sFile220": "220-90_6ad879185cfaa.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6ad879185cfaa.jpg",
+                        "_hFile530": 299,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6ad879185cfaa.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100,
+                        "_sFile800": "800-90_6ad879185cfaa.jpg",
+                        "_hFile800": 451,
+                        "_wFile800": 800
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "30 seconds in and he's already over it.",
+                        "_sFile": "6ad8791840422.jpg",
+                        "_sFile100": "100-90_6ad8791840422.jpg",
+                        "_hFile100": 67,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 5666826,
+                "_sName": "AutoSaveSam",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/5666826",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6ada65eb84888.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Textures",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22569",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/6450cdd6e4276.png"
+            },
+            "_aSubCategory": {
+                "_sName": "For other mods (textures)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/26410",
+                "_sIconUrl": ""
+            },
+            "_sVersion": "1.1",
+            "_tsDateUpdated": 1792697376,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 3,
+            "_nPostCount": 4,
+            "_bWasFeatured": false,
+            "_nViewCount": 974,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 721187,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "3DS Dark Malon over Dark Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/721187",
+            "_tsDateAdded": 1790464154,
+            "_tsDateModified": 1792524316,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "The Hero of Darkness.",
+                        "_sFile": "6ab84f8edc51f.jpg",
+                        "_sFile220": "220-90_6ab84f8edc51f.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6ab84f8edc51f.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6ab84f8edc51f.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ab84f8f63f26.jpg",
+                        "_sFile100": "100-90_6ab84f8f63f26.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ab84f8f44bf9.jpg",
+                        "_sFile100": "100-90_6ab84f8f44bf9.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Dark vs Dark.",
+                        "_sFile": "6ab84f8f3eb36.jpg",
+                        "_sFile100": "100-90_6ab84f8f3eb36.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Can use equipment form other Dark Link mods.",
+                        "_sFile": "6ab84f8ed6bb1.jpg",
+                        "_sFile100": "100-90_6ab84f8ed6bb1.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Other Dark Link mods can use her equipment!",
+                        "_sFile": "6ab84f8f41418.jpg",
+                        "_sFile100": "100-90_6ab84f8f41418.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Thank you!",
+                        "_sFile": "6ac15222b31c4.jpg",
+                        "_sFile100": "100-90_6ac15222b31c4.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "New Rig!",
+                        "_sFile": "6ad7bf75d61fa.jpg",
+                        "_sFile100": "100-90_6ad7bf75d61fa.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3816586,
+                "_sName": "JackShenLong",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3816586",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6aa1e5a481964.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Enemies and Bosses",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/44174",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/69b5f64c03982.png"
+            },
+            "_sVersion": "2.0",
+            "_tsDateUpdated": 1792524331,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 6,
+            "_bWasFeatured": false,
+            "_nViewCount": 1076,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 721193,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "3DS Heroine Malon over Dark Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/721193",
+            "_tsDateAdded": 1790465379,
+            "_tsDateModified": 1792522525,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "The Heroine of Time.",
+                        "_sFile": "6ab851fb5fa32.jpg",
+                        "_sFile220": "220-90_6ab851fb5fa32.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6ab851fb5fa32.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6ab851fb5fa32.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Hero vs Heroine.",
+                        "_sFile": "6ab8520739bf3.jpg",
+                        "_sFile100": "100-90_6ab8520739bf3.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ab852074936f.jpg",
+                        "_sFile100": "100-90_6ab852074936f.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Goron Tunic + Biggoron Sword.",
+                        "_sFile": "6ab8521ac1b1b.jpg",
+                        "_sFile100": "100-90_6ab8521ac1b1b.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Biggoron Duel!",
+                        "_sFile": "6ab85225ae9ef.jpg",
+                        "_sFile100": "100-90_6ab85225ae9ef.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Zora Tunic + Mirror Shield.",
+                        "_sFile": "6ab85381e78c0.jpg",
+                        "_sFile100": "100-90_6ab85381e78c0.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "MIRROR Match. (STILL not sorry.)",
+                        "_sFile": "6ab85240c43aa.jpg",
+                        "_sFile100": "100-90_6ab85240c43aa.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Can use the Equipment from Other Dark Link mods....",
+                        "_sFile": "6ab854868d7ad.jpg",
+                        "_sFile100": "100-90_6ab854868d7ad.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "And other Dark Link mods can use her equipment!",
+                        "_sFile": "6ab853ecb9782.jpg",
+                        "_sFile100": "100-90_6ab853ecb9782.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Updated RIG!",
+                        "_sFile": "6ad7b8e66e499.jpg",
+                        "_sFile100": "100-90_6ad7b8e66e499.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "yes.",
+                        "_sFile": "6ad7b8e60306e.jpg",
+                        "_sFile100": "100-90_6ad7b8e60306e.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "on all tunics.",
+                        "_sFile": "6ad7b8e650dd7.jpg",
+                        "_sFile100": "100-90_6ad7b8e650dd7.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3816586,
+                "_sName": "JackShenLong",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3816586",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6aa1e5a481964.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Enemies and Bosses",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/44174",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/69b5f64c03982.png"
+            },
+            "_sVersion": "2.0",
+            "_tsDateUpdated": 1792522559,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 5,
+            "_bWasFeatured": false,
+            "_nViewCount": 1496,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 717981,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "The Hero of Time (3DS) over Dark Link.",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/717981",
+            "_tsDateAdded": 1789614446,
+            "_tsDateModified": 1792518514,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "The Hero of Time.",
+                        "_sFile": "6aab42d9816fc.jpg",
+                        "_sFile220": "220-90_6aab42d9816fc.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6aab42d9816fc.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6aab42d9816fc.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6aab459d4ded8.jpg",
+                        "_sFile100": "100-90_6aab459d4ded8.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Conquer your true self",
+                        "_sFile": "6aab457b89209.jpg",
+                        "_sFile100": "100-90_6aab457b89209.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6aab43067605d.jpg",
+                        "_sFile100": "100-90_6aab43067605d.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Goron Tunic",
+                        "_sFile": "6aab4b4b34d79.jpg",
+                        "_sFile100": "100-90_6aab4b4b34d79.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Biggoron Sword + Sheath! (No shield)",
+                        "_sFile": "6aab50f0d791d.jpg",
+                        "_sFile100": "100-90_6aab50f0d791d.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Hero vs Heroine!",
+                        "_sFile": "6aab518290885.jpg",
+                        "_sFile100": "100-90_6aab518290885.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Zora Tunic.",
+                        "_sFile": "6aab4b7adcc82.jpg",
+                        "_sFile100": "100-90_6aab4b7adcc82.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Mirror Shield!",
+                        "_sFile": "6aab50f319871.jpg",
+                        "_sFile100": "100-90_6aab50f319871.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "MIRROR Match! (I'm not sorry)",
+                        "_sFile": "6aab52d0cb7c2.jpg",
+                        "_sFile100": "100-90_6aab52d0cb7c2.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Can use Equipment form other Dark Link mods...",
+                        "_sFile": "6aab581a1e989.jpg",
+                        "_sFile100": "100-90_6aab581a1e989.jpg",
+                        "_hFile100": 100,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "and other Dark Link mods can use his equipment!",
+                        "_sFile": "6aab58d89df41.jpg",
+                        "_sFile100": "100-90_6aab58d89df41.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "N64 vs 3DS!",
+                        "_sFile": "6ad7a8b6c32cc.jpg",
+                        "_sFile100": "100-90_6ad7a8b6c32cc.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "One of us will have to change...",
+                        "_sFile": "6ad7a8b6c0309.jpg",
+                        "_sFile100": "100-90_6ad7a8b6c0309.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "and it won't be me!",
+                        "_sFile": "6ad7a8b6b8f0d.jpg",
+                        "_sFile100": "100-90_6ad7a8b6b8f0d.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3816586,
+                "_sName": "JackShenLong",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3816586",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6aa1e5a481964.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Enemies and Bosses",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/44174",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/69b5f64c03982.png"
+            },
+            "_sVersion": "2.0",
+            "_tsDateUpdated": 1792518478,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 7,
+            "_nPostCount": 5,
+            "_bWasFeatured": false,
+            "_nViewCount": 1521,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 718004,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Dark Link (3DS) over Dark Link.",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/718004",
+            "_tsDateAdded": 1789622582,
+            "_tsDateModified": 1792516208,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "The Hero of Darkness.",
+                        "_sFile": "6aab787943ec9.jpg",
+                        "_sFile220": "220-90_6aab787943ec9.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6aab787943ec9.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6aab787943ec9.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "With his own sheath!",
+                        "_sFile": "6aab7879afd42.jpg",
+                        "_sFile100": "100-90_6aab7879afd42.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Classic.",
+                        "_sFile": "6aab7878df51c.jpg",
+                        "_sFile100": "100-90_6aab7878df51c.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Dance to the music.",
+                        "_sFile": "6aab787921db9.jpg",
+                        "_sFile100": "100-90_6aab787921db9.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "You can use equipment from other Dark Link mods...",
+                        "_sFile": "6aab78796522d.jpg",
+                        "_sFile100": "100-90_6aab78796522d.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "And other Dark Link mods can use his equipment!",
+                        "_sFile": "6aab7879631ca.jpg",
+                        "_sFile100": "100-90_6aab7879631ca.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Original VS 3DS! (UPDATED RIGGING!)",
+                        "_sFile": "6ad7a055ecb74.jpg",
+                        "_sFile100": "100-90_6ad7a055ecb74.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3816586,
+                "_sName": "JackShenLong",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3816586",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6aa1e5a481964.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Enemies and Bosses",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/44174",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/69b5f64c03982.png"
+            },
+            "_sVersion": "2.0",
+            "_tsDateUpdated": 1792516147,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 5,
+            "_nPostCount": 4,
+            "_bWasFeatured": false,
+            "_nViewCount": 1656,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 659580,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Enhanced 3ds Overhaul Updated Textures",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/659580",
+            "_tsDateAdded": 1773372178,
+            "_tsDateModified": 1792274709,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69b382500efde.jpg",
+                        "_sFile220": "220-90_69b382500efde.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_69b382500efde.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_69b382500efde.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69b3825c081f3.jpg",
+                        "_sFile100": "100-90_69b3825c081f3.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69b382679c061.jpg",
+                        "_sFile100": "100-90_69b382679c061.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69b38271189fb.jpg",
+                        "_sFile100": "100-90_69b38271189fb.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69b38273cd330.jpg",
+                        "_sFile100": "100-90_69b38273cd330.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69b38276c147f.jpg",
+                        "_sFile100": "100-90_69b38276c147f.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69b3827a96a45.jpg",
+                        "_sFile100": "100-90_69b3827a96a45.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "69b3827e55a89.jpg",
+                        "_sFile100": "100-90_69b3827e55a89.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3807006,
+                "_sName": "SubaruRaikuro",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3807006",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/66ed91e45bab5.jpg"
+            },
+            "_aRootCategory": {
+                "_sName": "Textures",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22569",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/6450cdd6e4276.png"
+            },
+            "_sVersion": "3.0",
+            "_tsDateUpdated": 1792274952,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 8,
+            "_nPostCount": 8,
+            "_bWasFeatured": false,
+            "_nViewCount": 20012,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 602114,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "(OOT) Fad\u00f3's Equipment",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/602114",
+            "_tsDateAdded": 1750548598,
+            "_tsDateModified": 1792354183,
+            "_bHasFiles": true,
+            "_aTags": [
+                "Software Used: Blender",
+                "Software Used: Paint.NET"
+            ],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Fad\u00f3's Equipment",
+                        "_sFile": "69bbe241d59fd.jpg",
+                        "_sFile220": "220-90_69bbe241d59fd.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_69bbe241d59fd.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_69bbe241d59fd.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Kokiri Sword",
+                        "_sFile": "69bbe257c8874.jpg",
+                        "_sFile100": "100-90_69bbe257c8874.jpg",
+                        "_hFile100": 68,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Deku Shield",
+                        "_sFile": "69bbe26a0a758.jpg",
+                        "_sFile100": "100-90_69bbe26a0a758.jpg",
+                        "_hFile100": 69,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Deku Shield",
+                        "_sFile": "69bbe7dcbebaa.jpg",
+                        "_sFile100": "100-90_69bbe7dcbebaa.jpg",
+                        "_hFile100": 112,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Master Sword",
+                        "_sFile": "69bbe28caac59.jpg",
+                        "_sFile100": "100-90_69bbe28caac59.jpg",
+                        "_hFile100": 66,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Master Sword Sheath",
+                        "_sFile": "69bbe3031ece2.jpg",
+                        "_sFile100": "100-90_69bbe3031ece2.jpg",
+                        "_hFile100": 115,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Hylian Shield",
+                        "_sFile": "69bbe3461a830.jpg",
+                        "_sFile100": "100-90_69bbe3461a830.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Biggoron Sword",
+                        "_sFile": "69bbe31db47b7.jpg",
+                        "_sFile100": "100-90_69bbe31db47b7.jpg",
+                        "_hFile100": 73,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Biggoron Sword Sheath",
+                        "_sFile": "69bbe5be278d0.jpg",
+                        "_sFile100": "100-90_69bbe5be278d0.jpg",
+                        "_hFile100": 118,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Mirror Shield",
+                        "_sFile": "69bbe61e96cc5.jpg",
+                        "_sFile100": "100-90_69bbe61e96cc5.jpg",
+                        "_hFile100": 75,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Fairy Bow",
+                        "_sFile": "69bbe371bcd21.jpg",
+                        "_sFile100": "100-90_69bbe371bcd21.jpg",
+                        "_hFile100": 62,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Fairy Bow",
+                        "_sFile": "69bbe39b1fd59.jpg",
+                        "_sFile100": "100-90_69bbe39b1fd59.jpg",
+                        "_hFile100": 63,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Hookshot + Longshot",
+                        "_sFile": "69bbe58f233bd.jpg",
+                        "_sFile100": "100-90_69bbe58f233bd.jpg",
+                        "_hFile100": 55,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Megaton Hammer",
+                        "_sFile": "69bbe3c91040c.jpg",
+                        "_sFile100": "100-90_69bbe3c91040c.jpg",
+                        "_hFile100": 105,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Deku stick",
+                        "_sFile": "69bbe4259c5c6.jpg",
+                        "_sFile100": "100-90_69bbe4259c5c6.jpg",
+                        "_hFile100": 142,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "New Hero's Shade Sword (Archived)",
+                        "_sFile": "697bbeced23cc.jpg",
+                        "_sFile100": "100-90_697bbeced23cc.jpg",
+                        "_hFile100": 78,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "New Hero's Shade Sheath (Archived)",
+                        "_sFile": "697bbecede0d1.jpg",
+                        "_sFile100": "100-90_697bbecede0d1.jpg",
+                        "_hFile100": 94,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Ancient Hero's Shade Sword (Archived)",
+                        "_sFile": "697bbece98403.jpg",
+                        "_sFile100": "100-90_697bbece98403.jpg",
+                        "_hFile100": 68,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Ancient Hero's Shade Sheath(Archived)",
+                        "_sFile": "697bbece74fbd.jpg",
+                        "_sFile100": "100-90_697bbece74fbd.jpg",
+                        "_hFile100": 83,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Hero's Shade Shield (New, Aged, Ancient) (Archived)",
+                        "_sFile": "695da564b2129.jpg",
+                        "_sFile100": "100-90_695da564b2129.jpg",
+                        "_hFile100": 69,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "New Biggoron Sheath (Archived)",
+                        "_sFile": "695da51152fc0.jpg",
+                        "_sFile100": "100-90_695da51152fc0.jpg",
+                        "_hFile100": 96,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Reinforced Deku Shield (Archived)",
+                        "_sFile": "69559ba1666c2.jpg",
+                        "_sFile100": "100-90_69559ba1666c2.jpg",
+                        "_hFile100": 88,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1713801,
+                "_sName": "Fado",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1713801",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/685432a36168f.png",
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6991cf107dc82.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_sVersion": "3.0",
+            "_tsDateUpdated": 1792266390,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 83,
+            "_nPostCount": 216,
+            "_bWasFeatured": false,
+            "_nViewCount": 59127,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 628957,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "The Ghosty Mod: A ghost-themed texture pack",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/628957",
+            "_tsDateAdded": 1761274373,
+            "_tsDateModified": 1792197938,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "68fad7e9a0d9a.jpg",
+                        "_sFile220": "220-90_68fad7e9a0d9a.jpg",
+                        "_hFile220": 104,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_68fad7e9a0d9a.jpg",
+                        "_hFile530": 250,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_68fad7e9a0d9a.jpg",
+                        "_hFile100": 47,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "68fad85125b55.jpg",
+                        "_sFile100": "100-90_68fad85125b55.jpg",
+                        "_hFile100": 48,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "68fad8d392220.jpg",
+                        "_sFile100": "100-90_68fad8d392220.jpg",
+                        "_hFile100": 47,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "68fad93edeb04.jpg",
+                        "_sFile100": "100-90_68fad93edeb04.jpg",
+                        "_hFile100": 40,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "68fad9667fdb1.jpg",
+                        "_sFile100": "100-90_68fad9667fdb1.jpg",
+                        "_hFile100": 47,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "68fada265dddf.jpg",
+                        "_sFile100": "100-90_68fada265dddf.jpg",
+                        "_hFile100": 49,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "68fad9e48f5f5.jpg",
+                        "_sFile100": "100-90_68fad9e48f5f5.jpg",
+                        "_hFile100": 47,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 4899661,
+                "_sName": "SpookyGhosty",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/4899661",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/68f42a9221ef9.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Textures",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22569",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/6450cdd6e4276.png"
+            },
+            "_sVersion": "",
+            "_tsDateUpdated": 1792197345,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 8,
+            "_nPostCount": 2,
+            "_bWasFeatured": false,
+            "_nViewCount": 2723,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 726461,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "The Hero of Time over Dark Link.",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/726461",
+            "_tsDateAdded": 1791693730,
+            "_tsDateModified": 1791933014,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "FINALLY FIXED IT.",
+                        "_sFile": "6acd306816017.jpg",
+                        "_sFile220": "220-90_6acd306816017.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6acd306816017.jpg",
+                        "_hFile530": 299,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6acd306816017.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Current version.",
+                        "_sFile": "6acd3066c0b92.jpg",
+                        "_sFile100": "100-90_6acd3066c0b92.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6acb11681e40d.jpg",
+                        "_sFile100": "100-90_6acb11681e40d.jpg",
+                        "_hFile100": 152,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6acb11685fd6a.jpg",
+                        "_sFile100": "100-90_6acb11685fd6a.jpg",
+                        "_hFile100": 109,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6acb1168c3ae1.jpg",
+                        "_sFile100": "100-90_6acb1168c3ae1.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6acb1168cd365.jpg",
+                        "_sFile100": "100-90_6acb1168cd365.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6acb1169962d7.jpg",
+                        "_sFile100": "100-90_6acb1169962d7.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6acb11699ce07.jpg",
+                        "_sFile100": "100-90_6acb11699ce07.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "He can equip stuff from other mods!",
+                        "_sFile": "6acb1340a4ca0.jpg",
+                        "_sFile100": "100-90_6acb1340a4ca0.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Other mods can equip his stuff!",
+                        "_sFile": "6acb13408cca2.jpg",
+                        "_sFile100": "100-90_6acb13408cca2.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Sick!",
+                        "_sFile": "6aceba37a4886.jpg",
+                        "_sFile100": "100-90_6aceba37a4886.jpg",
+                        "_hFile100": 54,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3816586,
+                "_sName": "JackShenLong",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3816586",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6aa1e5a481964.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Enemies and Bosses",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/44174",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/69b5f64c03982.png"
+            },
+            "_sVersion": "2.5",
+            "_tsDateUpdated": 1791832333,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 4,
+            "_nPostCount": 9,
+            "_bWasFeatured": false,
+            "_nViewCount": 709,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 550130,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "HD Textures Art Plus Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/550130",
+            "_tsDateAdded": 1729520651,
+            "_tsDateModified": 1793171555,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67bc7e037caf9.jpg",
+                        "_sFile220": "220-90_67bc7e037caf9.jpg",
+                        "_hFile220": 157,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_67bc7e037caf9.jpg",
+                        "_hFile530": 377,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_67bc7e037caf9.jpg",
+                        "_hFile100": 71,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67bc7e0c6507b.jpg",
+                        "_sFile100": "100-90_67bc7e0c6507b.jpg",
+                        "_hFile100": 84,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6927d4e9f17f9.jpg",
+                        "_sFile100": "100-90_6927d4e9f17f9.jpg",
+                        "_hFile100": 134,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67bc7e1d06f73.jpg",
+                        "_sFile100": "100-90_67bc7e1d06f73.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67bc7e2c2d123.jpg",
+                        "_sFile100": "100-90_67bc7e2c2d123.jpg",
+                        "_hFile100": 112,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6716631e5045e.jpg",
+                        "_sFile100": "100-90_6716631e5045e.jpg",
+                        "_hFile100": 81,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Optional Crescent Mirror Shield included",
+                        "_sFile": "6758c3b6e4058.jpg",
+                        "_sFile100": "100-90_6758c3b6e4058.jpg",
+                        "_hFile100": 116,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6758c3ba99354.jpg",
+                        "_sFile100": "100-90_6758c3ba99354.jpg",
+                        "_hFile100": 119,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "67bc7e6069b9d.jpg",
+                        "_sFile100": "100-90_67bc7e6069b9d.jpg",
+                        "_hFile100": 125,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 2511624,
+                "_sName": "Cole Man",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/2511624",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/static\/img\/defaults\/avatar.gif"
+            },
+            "_aRootCategory": {
+                "_sName": "Textures",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22569",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/6450cdd6e4276.png"
+            },
+            "_aSubCategory": {
+                "_sName": "For other mods (textures)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/26410",
+                "_sIconUrl": ""
+            },
+            "_sVersion": "2.1",
+            "_tsDateUpdated": 1791667059,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 55,
+            "_nPostCount": 54,
+            "_bWasFeatured": false,
+            "_nViewCount": 86881,
+            "_bIsOwnedByAccessor": false
+        }
+    ]
+}

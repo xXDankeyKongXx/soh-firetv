@@ -1,0 +1,346 @@
+{
+    "_aMetadata": {
+        "_nRecordCount": 413,
+        "_bIsComplete": false,
+        "_nPerpage": 2
+    },
+    "_aRecords": [
+        {
+            "_idRow": 477979,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Djipi's 3DS Experience + Skilar's Art Plus Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/477979",
+            "_tsDateAdded": 1699378804,
+            "_tsDateModified": 1789063429,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "654a74e75fa34.jpg",
+                        "_sFile220": "220-90_654a74e75fa34.jpg",
+                        "_hFile220": 141,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_654a74e75fa34.jpg",
+                        "_hFile530": 339,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_654a74e75fa34.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100,
+                        "_sFile800": "800-90_654a74e75fa34.jpg",
+                        "_hFile800": 512,
+                        "_wFile800": 800
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "654a750666294.jpg",
+                        "_sFile100": "100-90_654a750666294.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "654a7526950fe.jpg",
+                        "_sFile100": "100-90_654a7526950fe.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "654a7546568db.jpg",
+                        "_sFile100": "100-90_654a7546568db.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 2994531,
+                "_sName": "Djipi",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/2994531",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/654aba9e6a59c.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Complete Overhaul",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/26178",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/654a7934ec5eb.png"
+            },
+            "_sVersion": "6.0.2",
+            "_tsDateUpdated": 1788847027,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 323,
+            "_nPostCount": 566,
+            "_bWasFeatured": true,
+            "_nViewCount": 432397,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 476703,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Playas 3DS Malon (Heroine)[2026 Alt Assets Update]",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/476703",
+            "_tsDateAdded": 1698698037,
+            "_tsDateModified": 1789230787,
+            "_bHasFiles": true,
+            "_aTags": [
+                "Software Used: Blender",
+                "Software Used: Photoshop"
+            ],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Malon | Heroine of Time",
+                        "_sFile": "654066827ccc9.jpg",
+                        "_sFile220": "220-90_654066827ccc9.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_654066827ccc9.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_654066827ccc9.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100,
+                        "_sFile800": "800-90_654066827ccc9.jpg",
+                        "_hFile800": 450,
+                        "_wFile800": 800
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Child Model!",
+                        "_sFile": "6540105e7f0b1.jpg",
+                        "_sFile100": "100-90_6540105e7f0b1.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "3DS Ocarina",
+                        "_sFile": "6540105dbd25e.jpg",
+                        "_sFile100": "100-90_6540105dbd25e.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "3DS Eqipment",
+                        "_sFile": "6540105b3aef7.jpg",
+                        "_sFile100": "100-90_6540105b3aef7.jpg",
+                        "_hFile100": 49,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Custom FPS Arms",
+                        "_sFile": "6540105e0d231.jpg",
+                        "_sFile100": "100-90_6540105e0d231.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "3DS Boomerang",
+                        "_sFile": "6540105a9763b.jpg",
+                        "_sFile100": "100-90_6540105a9763b.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Tunic Colour Compatibility",
+                        "_sFile": "6540105705268.jpg",
+                        "_sFile100": "100-90_6540105705268.jpg",
+                        "_hFile100": 49,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Tunic Colour Compatibility",
+                        "_sFile": "65401058b2302.jpg",
+                        "_sFile100": "100-90_65401058b2302.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "From child",
+                        "_sFile": "6540105935454.jpg",
+                        "_sFile100": "100-90_6540105935454.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "to Adult!",
+                        "_sFile": "6540105e77fc8.jpg",
+                        "_sFile100": "100-90_6540105e77fc8.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Onwards to save the princess!",
+                        "_sFile": "6540105ea9fe9.jpg",
+                        "_sFile100": "100-90_6540105ea9fe9.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "FPS Arm and 3DS Bow",
+                        "_sFile": "6540105ebcd07.jpg",
+                        "_sFile100": "100-90_6540105ebcd07.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "FPS Arm and 3DS Hookshot",
+                        "_sFile": "6540105e32ce5.jpg",
+                        "_sFile100": "100-90_6540105e32ce5.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Strike a pose!",
+                        "_sFile": "6540105f23310.jpg",
+                        "_sFile100": "100-90_6540105f23310.jpg",
+                        "_hFile100": 52,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "3DS Hammer and Custom Shield",
+                        "_sFile": "6540105e4a158.jpg",
+                        "_sFile100": "100-90_6540105e4a158.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Custom Fists (Hookshot)",
+                        "_sFile": "6540105d42c07.jpg",
+                        "_sFile100": "100-90_6540105d42c07.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Custom Fists (Bow)",
+                        "_sFile": "6540105d2f2ed.jpg",
+                        "_sFile100": "100-90_6540105d2f2ed.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Custom Bottle",
+                        "_sFile": "6540105da8b76.jpg",
+                        "_sFile100": "100-90_6540105da8b76.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "This sign can't stop me I can't read!",
+                        "_sFile": "6540105d5af1e.jpg",
+                        "_sFile100": "100-90_6540105d5af1e.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Tunic Colour Compatible",
+                        "_sFile": "6540105e19803.jpg",
+                        "_sFile100": "100-90_6540105e19803.jpg",
+                        "_hFile100": 52,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Tunic Colour Compatible",
+                        "_sFile": "6540105a7567d.jpg",
+                        "_sFile100": "100-90_6540105a7567d.jpg",
+                        "_hFile100": 51,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 2214073,
+                "_sName": "MalonRose",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/2214073",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/62f124998096a.gif"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Both Player Models - Unaltered Skeleton",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/31637",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/66d5fa90b67c4.png"
+            },
+            "_sVersion": "1.2",
+            "_tsDateUpdated": 1789230853,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 136,
+            "_nPostCount": 71,
+            "_bWasFeatured": false,
+            "_nViewCount": 133535,
+            "_bIsOwnedByAccessor": false
+        }
+    ]
+}

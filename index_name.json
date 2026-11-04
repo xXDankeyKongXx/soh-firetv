@@ -1,0 +1,9 @@
+{
+    "_sErrorCode": "INPUT_ERRORS",
+    "_aErrorData": {
+        "_aFilters": {
+            "_sErrorCode": "INVALID_FILTER_VALUE",
+            "_sErrorMessage": "Invalid filter value for 'Generic_Name'"
+        }
+    }
+}

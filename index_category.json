@@ -1,0 +1,133 @@
+{
+    "_aMetadata": {
+        "_nRecordCount": 1,
+        "_bIsComplete": true,
+        "_nPerpage": 2
+    },
+    "_aRecords": [
+        {
+            "_idRow": 513004,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Non-Intrusive Magic Arrows",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/513004",
+            "_tsDateAdded": 1715463042,
+            "_tsDateModified": 1784430617,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Light arrow aim",
+                        "_sFile": "663fdb85b2c39.jpg",
+                        "_sFile220": "220-90_663fdb85b2c39.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_663fdb85b2c39.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_663fdb85b2c39.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Ice arrow aim",
+                        "_sFile": "663fdb66e10ae.jpg",
+                        "_sFile100": "100-90_663fdb66e10ae.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Fire arrow aim",
+                        "_sFile": "663fdb8952b3b.jpg",
+                        "_sFile100": "100-90_663fdb8952b3b.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Light arrow hit",
+                        "_sFile": "663fdb896e865.jpg",
+                        "_sFile100": "100-90_663fdb896e865.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Ice arrow hit",
+                        "_sFile": "663fdb67bd2e3.jpg",
+                        "_sFile100": "100-90_663fdb67bd2e3.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Fire arrow hit",
+                        "_sFile": "663fdb865ba01.jpg",
+                        "_sFile100": "100-90_663fdb865ba01.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "OPTIONAL: Blue fire aim (alternate ice arrow texture)",
+                        "_sFile": "663fde9520b98.jpg",
+                        "_sFile100": "100-90_663fde9520b98.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "OPTIONAL: Blue fire hit (alternate ice arrow texture)",
+                        "_sFile": "663fde97be10b.jpg",
+                        "_sFile100": "100-90_663fde97be10b.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1673689,
+                "_sName": "Dziggy",
+                "_bIsOnline": false,
+                "_bHasRipe": true,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1673689",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/5c171e5705842.png",
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/64968be8af871.png",
+                "_sUpicUrl": "https:\/\/images.gamebanana.com\/img\/upic\/64b39950c7b2b.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Accessibility",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/47454",
+                "_sIconUrl": ""
+            },
+            "_sVersion": "Any",
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 13,
+            "_nPostCount": 1,
+            "_bWasFeatured": false,
+            "_nViewCount": 8150,
+            "_bIsOwnedByAccessor": false
+        }
+    ]
+}

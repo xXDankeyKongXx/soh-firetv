@@ -1,0 +1,78 @@
+[
+    {
+        "_idRow": 47454,
+        "_sName": "Accessibility",
+        "_nItemCount": 1,
+        "_nCategoryCount": 0,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/47454",
+        "_bIsObsolete": false
+    },
+    {
+        "_idRow": 42311,
+        "_sName": "Animations",
+        "_nItemCount": 7,
+        "_nCategoryCount": 1,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/42311",
+        "_bIsObsolete": false
+    },
+    {
+        "_idRow": 26178,
+        "_sName": "Complete Overhaul",
+        "_nItemCount": 11,
+        "_nCategoryCount": 0,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/26178",
+        "_bIsObsolete": false,
+        "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/654a7934ec5eb.png"
+    },
+    {
+        "_idRow": 31639,
+        "_sName": "Legacy",
+        "_nItemCount": 2,
+        "_nCategoryCount": 0,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/31639",
+        "_bIsObsolete": false,
+        "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/66d6096a96746.png"
+    },
+    {
+        "_idRow": 22568,
+        "_sName": "Models",
+        "_nItemCount": 247,
+        "_nCategoryCount": 9,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+        "_bIsObsolete": false,
+        "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+    },
+    {
+        "_idRow": 21382,
+        "_sName": "Other\/Misc",
+        "_nItemCount": 4,
+        "_nCategoryCount": 1,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/21382",
+        "_bIsObsolete": false
+    },
+    {
+        "_idRow": 47453,
+        "_sName": "Scene",
+        "_nItemCount": 6,
+        "_nCategoryCount": 0,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/47453",
+        "_bIsObsolete": false
+    },
+    {
+        "_idRow": 26894,
+        "_sName": "Text",
+        "_nItemCount": 19,
+        "_nCategoryCount": 3,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/26894",
+        "_bIsObsolete": false
+    },
+    {
+        "_idRow": 22569,
+        "_sName": "Textures",
+        "_nItemCount": 116,
+        "_nCategoryCount": 4,
+        "_sUrl": "https:\/\/gamebanana.com\/mods\/cats\/22569",
+        "_bIsObsolete": false,
+        "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/6450cdd6e4276.png"
+    }
+]

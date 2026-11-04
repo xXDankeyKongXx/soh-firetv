@@ -1,0 +1,1287 @@
+{
+    "_aMetadata": {
+        "_nRecordCount": 252,
+        "_nPerpage": 15,
+        "_bIsComplete": false,
+        "_aSectionMatchCounts": [
+            {
+                "_sModelName": "Mod",
+                "_sPluralTitle": "Mods",
+                "_sDescription": "Installable files that modify or extend play",
+                "_sIconClasses": "SubmissionTypeSmall Mod",
+                "_nMatchCount": 174
+            },
+            {
+                "_sModelName": "Question",
+                "_sPluralTitle": "Questions",
+                "_sDescription": "Help threads",
+                "_sIconClasses": "SubmissionTypeSmall Question",
+                "_nMatchCount": 8
+            },
+            {
+                "_sModelName": "Request",
+                "_sPluralTitle": "Requests",
+                "_sDescription": "Appeals for things to be made",
+                "_sIconClasses": "SubmissionTypeSmall Request",
+                "_nMatchCount": 39
+            },
+            {
+                "_sModelName": "Sound",
+                "_sPluralTitle": "Sounds",
+                "_sDescription": "Sound effects & voices",
+                "_sIconClasses": "SubmissionTypeSmall Sound",
+                "_nMatchCount": 17
+            },
+            {
+                "_sModelName": "Tool",
+                "_sPluralTitle": "Tools",
+                "_sDescription": "Modding & game-related applications",
+                "_sIconClasses": "SubmissionTypeSmall Tool",
+                "_nMatchCount": 2
+            },
+            {
+                "_sModelName": "Tutorial",
+                "_sPluralTitle": "Tutorials",
+                "_sDescription": "Guides to modding & gaming",
+                "_sIconClasses": "SubmissionTypeSmall Tutorial",
+                "_nMatchCount": 7
+            },
+            {
+                "_sModelName": "Wip",
+                "_sPluralTitle": "WiPs",
+                "_sDescription": "Works in Progress",
+                "_sIconClasses": "SubmissionTypeSmall Wip",
+                "_nMatchCount": 6
+            }
+        ]
+    },
+    "_aRecords": [
+        {
+            "_idRow": 87677,
+            "_sModelName": "Sound",
+            "_sSingularTitle": "Sound",
+            "_sIconClasses": "SubmissionType Sound",
+            "_sName": "A Link Between Worlds Link Sounds (Adult Link)",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/sounds\/87677",
+            "_tsDateAdded": 1774713518,
+            "_tsDateModified": 1774713518,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aMetadata": {
+                    "_sAudioUrl": "https:\/\/files.gamebanana.com\/preview\/sounds\/adult_link_-_attack_1_meta.mp3"
+                }
+            },
+            "_aSubmitter": {
+                "_idRow": 5240386,
+                "_sName": "KnowItAllScholar",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/5240386",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6999def1bd9d4.bmp"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Voices",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/sounds\/cats\/6236",
+                "_sIconUrl": ""
+            },
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 6,
+            "_nPostCount": 4,
+            "_bWasFeatured": false,
+            "_nViewCount": 1003,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 86125,
+            "_sModelName": "Request",
+            "_sSingularTitle": "Request",
+            "_sIconClasses": "SubmissionType Request",
+            "_sName": "Dark Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/86125",
+            "_tsDateAdded": 1769325271,
+            "_tsDateModified": 1769325271,
+            "_bHasFiles": false,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aMetadata": {
+                    "_nBounty": 0,
+                    "_sSnippet": "Is it possibly to make a Playable Dark Link skin for Ship of Harkinian?Both Child and Adult.Preferab..."
+                },
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/requests",
+                        "_sFile": "6975c24b82f09.jpg",
+                        "_sFile220": "220-90_6975c24b82f09.jpg",
+                        "_hFile220": 220,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6975c24b82f09.jpg",
+                        "_hFile530": 530,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6975c24b82f09.jpg",
+                        "_hFile100": 100,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 2124282,
+                "_sName": "KaosAlex",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/2124282",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/626d14cf6b480.jpg"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Skins",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/cats\/2764",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/RequestCategory\/64bc181421663.png"
+            },
+            "_sResolution": "Expired",
+            "_akResolution": "expired",
+            "_sResolutionMessage": "",
+            "_aAdditionalRewards": null,
+            "_nBounty": 0,
+            "_tsLastBoostDate": 0,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 5,
+            "_nPostCount": 7,
+            "_nViewCount": 2268,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 92218,
+            "_sModelName": "Request",
+            "_sSingularTitle": "Request",
+            "_sIconClasses": "SubmissionType Request",
+            "_sName": "Hatless 3DS link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/92218",
+            "_tsDateAdded": 1780566161,
+            "_tsDateModified": 1780901649,
+            "_bHasFiles": false,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aMetadata": {
+                    "_nBounty": 3585,
+                    "_sSnippet": "While I was playing OOT with the 3DS Link, an idea popped into my head... How about a 3DS version of..."
+                },
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/requests",
+                        "_sFile": "6a266701b7577.jpg",
+                        "_sFile220": "220-90_6a266701b7577.jpg",
+                        "_hFile220": 373,
+                        "_wFile220": 220,
+                        "_sFile530": "6a266701b7577.jpg",
+                        "_hFile530": 701,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6a266701b7577.jpg",
+                        "_hFile100": 169,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 4525310,
+                "_sName": "Tok-judgment",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/4525310",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6a21c6cf45502.jpg"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Model\/Texture",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/cats\/3089",
+                "_sIconUrl": ""
+            },
+            "_sResolution": "Delivered",
+            "_akResolution": "delivered",
+            "_sResolutionMessage": "",
+            "_aAdditionalRewards": [
+                "30"
+            ],
+            "_nBounty": 3585,
+            "_tsLastBoostDate": 1788875956,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 13,
+            "_nPostCount": 15,
+            "_nViewCount": 4250,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 442908,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Skilar's MM Adult Link + equipment",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/442908",
+            "_tsDateAdded": 1683752449,
+            "_tsDateModified": 1791297664,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6a1e8e44893c3.jpg",
+                        "_sFile220": "220-90_6a1e8e44893c3.jpg",
+                        "_hFile220": 110,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6a1e8e44893c3.jpg",
+                        "_hFile530": 265,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6a1e8e44893c3.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6a1e8e43edf5a.jpg",
+                        "_sFile100": "100-90_6a1e8e43edf5a.jpg",
+                        "_hFile100": 50,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6a1e8e4473632.jpg",
+                        "_sFile100": "100-90_6a1e8e4473632.jpg",
+                        "_hFile100": 150,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1598745,
+                "_sName": "Purple Hato",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1598745",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/61a3b7549edd0.png",
+                "_aClearanceLevels": [
+                    "SoH Manager",
+                    "2ship Manager",
+                    "Starship Manager",
+                    "Ghostship Manager",
+                    "Spaghetti Manager",
+                    "Lighthouse Manager",
+                    "PaperBoat Manager"
+                ],
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6450df3e3aca6.png",
+                "_sUpicUrl": "https:\/\/images.gamebanana.com\/img\/upic\/6554de842c14a.png",
+                "_aSubjectShaper": {
+                    "_sBorderStyle": "Drop Shadow",
+                    "_sFont": "Lucida Console Unicode",
+                    "_sTextColor": "#c458fe",
+                    "_sTextHoverColor": "#f9c4fd",
+                    "_sBorderHoverColor": "#ff00a2",
+                    "_sBorderColor": "#dfb5f2"
+                },
+                "_sSubjectShaperCssCode": "font-family:'Lucida Console Unicode';color:#c458fe;"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Adult Player Model - Unaltered Skeleton",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/31619",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/66d5f68bb06ad.png"
+            },
+            "_sVersion": "2.1",
+            "_tsDateUpdated": 1791284556,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 51,
+            "_nPostCount": 35,
+            "_bWasFeatured": false,
+            "_nViewCount": 46678,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 454999,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Playable Saria",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/454999",
+            "_tsDateAdded": 1688893582,
+            "_tsDateModified": 1725779883,
+            "_bHasFiles": true,
+            "_aTags": [
+                "Software Used: Blender"
+            ],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Hat Off Hat On",
+                        "_sFile": "64aeb28d4b1ac.jpg",
+                        "_sFile220": "220-90_64aeb28d4b1ac.jpg",
+                        "_hFile220": 132,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_64aeb28d4b1ac.jpg",
+                        "_hFile530": 318,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_64aeb28d4b1ac.jpg",
+                        "_hFile100": 60,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Hat On Rear and Side",
+                        "_sFile": "64aeb3d3c2a49.jpg",
+                        "_sFile100": "100-90_64aeb3d3c2a49.jpg",
+                        "_hFile100": 60,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 2767016,
+                "_sName": "PunishedBigs",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/2767016",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/64aa798658ead.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Young Player Model - Unaltered Skeleton",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/30717",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/669cc26840206.png"
+            },
+            "_sVersion": "1.1",
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 4,
+            "_nPostCount": 2,
+            "_bWasFeatured": false,
+            "_nViewCount": 22341,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 89592,
+            "_sModelName": "Sound",
+            "_sSingularTitle": "Sound",
+            "_sIconClasses": "SubmissionType Sound",
+            "_sName": "Toon Link voice over Young Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/sounds\/89592",
+            "_tsDateAdded": 1779561616,
+            "_tsDateModified": 1779561616,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aMetadata": {
+                    "_sAudioUrl": "https:\/\/files.gamebanana.com\/preview\/sounds\/preview_95bd8.ogg"
+                }
+            },
+            "_aSubmitter": {
+                "_idRow": 5240386,
+                "_sName": "KnowItAllScholar",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/5240386",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6999def1bd9d4.bmp"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Voices",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/sounds\/cats\/6236",
+                "_sIconUrl": ""
+            },
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 5,
+            "_nPostCount": 4,
+            "_bWasFeatured": false,
+            "_nViewCount": 1252,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 727838,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Sword [Kirby] of Harkinian",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/727838",
+            "_tsDateAdded": 1792023149,
+            "_tsDateModified": 1792110406,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ad01a1c7c9ce.jpg",
+                        "_sFile220": "220-90_6ad01a1c7c9ce.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6ad01a1c7c9ce.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6ad01a1c7c9ce.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ad01a1cb6860.jpg",
+                        "_sFile100": "100-90_6ad01a1cb6860.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ad01a1cb84bf.jpg",
+                        "_sFile100": "100-90_6ad01a1cb84bf.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ad01a1cc8519.jpg",
+                        "_sFile100": "100-90_6ad01a1cc8519.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6ad01a1d03429.jpg",
+                        "_sFile100": "100-90_6ad01a1d03429.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3794973,
+                "_sName": "kirbycope",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3794973",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/66e5cf8426108.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_sVersion": "",
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 2,
+            "_nPostCount": 4,
+            "_bWasFeatured": false,
+            "_nViewCount": 808,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 493371,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Legendary Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/493371",
+            "_tsDateAdded": 1706832143,
+            "_tsDateModified": 1725898235,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc3067da1d3.jpg",
+                        "_sFile220": "220-90_65bc3067da1d3.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_65bc3067da1d3.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_65bc3067da1d3.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc3078834d3.jpg",
+                        "_sFile100": "100-90_65bc3078834d3.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc3078628e8.jpg",
+                        "_sFile100": "100-90_65bc3078628e8.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc307841dd1.jpg",
+                        "_sFile100": "100-90_65bc307841dd1.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc30785a43e.jpg",
+                        "_sFile100": "100-90_65bc30785a43e.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc307892554.jpg",
+                        "_sFile100": "100-90_65bc307892554.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc30789c8e3.jpg",
+                        "_sFile100": "100-90_65bc30789c8e3.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308da6073.jpg",
+                        "_sFile100": "100-90_65bc308da6073.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308c8a996.jpg",
+                        "_sFile100": "100-90_65bc308c8a996.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308c2f739.jpg",
+                        "_sFile100": "100-90_65bc308c2f739.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308d2194a.jpg",
+                        "_sFile100": "100-90_65bc308d2194a.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308d9dc61.jpg",
+                        "_sFile100": "100-90_65bc308d9dc61.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308d8e218.jpg",
+                        "_sFile100": "100-90_65bc308d8e218.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308d13dc6.jpg",
+                        "_sFile100": "100-90_65bc308d13dc6.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308baa972.jpg",
+                        "_sFile100": "100-90_65bc308baa972.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308d8e38a.jpg",
+                        "_sFile100": "100-90_65bc308d8e38a.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308d8c425.jpg",
+                        "_sFile100": "100-90_65bc308d8c425.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bc308ded7d5.jpg",
+                        "_sFile100": "100-90_65bc308ded7d5.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1610631,
+                "_sName": "PxExYxTxOxN",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1610631",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/65f9ef4b1df78.png",
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/65f9ef779d1be.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Both Player Models - Altered Skeleton",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/31638",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/66d5fb6d86d44.png"
+            },
+            "_sVersion": "1.0",
+            "_tsDateUpdated": 1708836619,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 16,
+            "_nPostCount": 8,
+            "_bWasFeatured": false,
+            "_nViewCount": 43343,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 456161,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Toon Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/456161",
+            "_tsDateAdded": 1689380632,
+            "_tsDateModified": 1725898254,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "64b1e6c293352.jpg",
+                        "_sFile220": "220-90_64b1e6c293352.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_64b1e6c293352.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_64b1e6c293352.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "64b1e6d4ce1dd.jpg",
+                        "_sFile100": "100-90_64b1e6d4ce1dd.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "64b1e6d576042.jpg",
+                        "_sFile100": "100-90_64b1e6d576042.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "64b1e6d5e8522.jpg",
+                        "_sFile100": "100-90_64b1e6d5e8522.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "64b1e6d606b24.jpg",
+                        "_sFile100": "100-90_64b1e6d606b24.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41c849aa5.jpg",
+                        "_sFile100": "100-90_65bf41c849aa5.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41c84e784.jpg",
+                        "_sFile100": "100-90_65bf41c84e784.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41c8abd56.jpg",
+                        "_sFile100": "100-90_65bf41c8abd56.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41c8a7fea.jpg",
+                        "_sFile100": "100-90_65bf41c8a7fea.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41c91caa2.jpg",
+                        "_sFile100": "100-90_65bf41c91caa2.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41c91dc7b.jpg",
+                        "_sFile100": "100-90_65bf41c91dc7b.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41c93e320.jpg",
+                        "_sFile100": "100-90_65bf41c93e320.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41c92f0b9.jpg",
+                        "_sFile100": "100-90_65bf41c92f0b9.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf41ca67048.jpg",
+                        "_sFile100": "100-90_65bf41ca67048.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "65bf44a764c2b.jpg",
+                        "_sFile100": "100-90_65bf44a764c2b.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1610631,
+                "_sName": "PxExYxTxOxN",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1610631",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/65f9ef4b1df78.png",
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/65f9ef779d1be.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Both Player Models - Altered Skeleton",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/31638",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/66d5fb6d86d44.png"
+            },
+            "_sVersion": "1.1",
+            "_tsDateUpdated": 1707033194,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 19,
+            "_nPostCount": 8,
+            "_bWasFeatured": false,
+            "_nViewCount": 24198,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 88284,
+            "_sModelName": "Request",
+            "_sSingularTitle": "Request",
+            "_sIconClasses": "SubmissionType Request",
+            "_sName": "ALBW Link?",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/88284",
+            "_tsDateAdded": 1773564495,
+            "_tsDateModified": 1773564495,
+            "_bHasFiles": false,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aMetadata": {
+                    "_nBounty": 0,
+                    "_sSnippet": "I thought ALBW Link's model was really funny and great, and I wanted to see him in the N64 titles, b..."
+                },
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/requests",
+                        "_sCaption": "the guy",
+                        "_sFile": "69b671e6113dd.jpg",
+                        "_sFile220": "220-90_69b671e6113dd.jpg",
+                        "_hFile220": 182,
+                        "_wFile220": 220,
+                        "_sFile530": "69b671e6113dd.jpg",
+                        "_hFile530": 414,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_69b671e6113dd.jpg",
+                        "_hFile100": 83,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 3155433,
+                "_sName": "4 World",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/3155433",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/695847b457b59.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Model\/Texture",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/cats\/3089",
+                "_sIconUrl": ""
+            },
+            "_sResolution": "Expired",
+            "_akResolution": "expired",
+            "_sResolutionMessage": "",
+            "_aAdditionalRewards": null,
+            "_nBounty": 0,
+            "_tsLastBoostDate": 0,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nPostCount": 3,
+            "_nViewCount": 1717,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 702044,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Expie Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/702044",
+            "_tsDateAdded": 1786258510,
+            "_tsDateModified": 1787631875,
+            "_bHasFiles": true,
+            "_aTags": [
+                "Software Used: Blender"
+            ],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6a78232b347f0.jpg",
+                        "_sFile220": "220-90_6a78232b347f0.jpg",
+                        "_hFile220": 125,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6a78232b347f0.jpg",
+                        "_hFile530": 301,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6a78232b347f0.jpg",
+                        "_hFile100": 57,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6a78232e56f4e.jpg",
+                        "_sFile100": "100-90_6a78232e56f4e.jpg",
+                        "_hFile100": 125,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6a78239450bf1.jpg",
+                        "_sFile100": "100-90_6a78239450bf1.jpg",
+                        "_hFile100": 188,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6a78244022268.jpg",
+                        "_sFile100": "100-90_6a78244022268.jpg",
+                        "_hFile100": 61,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6a7823ec0fe24.jpg",
+                        "_sFile100": "100-90_6a7823ec0fe24.jpg",
+                        "_hFile100": 44,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Slingshot",
+                        "_sFile": "6a7eaf15f360b.jpg",
+                        "_sFile100": "100-90_6a7eaf15f360b.jpg",
+                        "_hFile100": 68,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Bow",
+                        "_sFile": "6a7eaf16c83b3.jpg",
+                        "_sFile100": "100-90_6a7eaf16c83b3.jpg",
+                        "_hFile100": 42,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sCaption": "Expink must be put below both other mods",
+                        "_sFile": "6a7eb27474958.jpg",
+                        "_sFile100": "100-90_6a7eb27474958.jpg",
+                        "_hFile100": 68,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1743493,
+                "_sName": "Sky Blue",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1743493",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6a4f3bd75d16e.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Models",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/22568",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64517f8eb16c6.png"
+            },
+            "_aSubCategory": {
+                "_sName": "Young & Adult Link",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/24906",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/64ea8446803de.png"
+            },
+            "_sVersion": "1.1",
+            "_tsDateUpdated": 1786687401,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 7,
+            "_nPostCount": 4,
+            "_bWasFeatured": false,
+            "_nViewCount": 1710,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 84459,
+            "_sModelName": "Request",
+            "_sSingularTitle": "Request",
+            "_sIconClasses": "SubmissionType Request",
+            "_sName": "Lizard Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/84459",
+            "_tsDateAdded": 1765663730,
+            "_tsDateModified": 1765663730,
+            "_bHasFiles": false,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aMetadata": {
+                    "_nBounty": 5410,
+                    "_sSnippet": "Just some sort of anthropomorphic lizard Link (both young and adult), any kind of lizard\/reptile's g..."
+                }
+            },
+            "_aSubmitter": {
+                "_idRow": 4508944,
+                "_sName": "Happy iguana",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/4508944",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/6834de4d96d66.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Skins",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/cats\/2764",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/RequestCategory\/64bc181421663.png"
+            },
+            "_sResolution": "Open",
+            "_akResolution": "open",
+            "_sResolutionMessage": "",
+            "_aAdditionalRewards": null,
+            "_nBounty": 5410,
+            "_tsLastBoostDate": 1793725849,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 3,
+            "_nPostCount": 6,
+            "_nViewCount": 1330,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 16969,
+            "_sModelName": "Tutorial",
+            "_sSingularTitle": "Tutorial",
+            "_sIconClasses": "SubmissionType Tutorial",
+            "_sName": "A Rough Guide on Making a Link Model",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/tuts\/16969",
+            "_tsDateAdded": 1702140985,
+            "_tsDateModified": 1725957908,
+            "_bHasFiles": false,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/tuts",
+                        "_sFile": "65749c1be751b.jpg",
+                        "_sFile220": "220-90_65749c1be751b.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_65749c1be751b.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_65749c1be751b.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 1610631,
+                "_sName": "PxExYxTxOxN",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1610631",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/65f9ef4b1df78.png",
+                "_sHdAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/65f9ef779d1be.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Modding Tools\/Processes",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/tuts\/cats\/3615",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/TutorialCategory\/66e0064e342c8.png"
+            },
+            "_akDifficultyLevel": "intermediate",
+            "_sDifficultyLevel": "Intermediate",
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 17,
+            "_nPostCount": 8,
+            "_bWasFeatured": true,
+            "_nViewCount": 59782,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 92099,
+            "_sModelName": "Request",
+            "_sSingularTitle": "Request",
+            "_sIconClasses": "SubmissionType Request",
+            "_sName": "Saria 3ds over Child Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/92099",
+            "_tsDateAdded": 1780335313,
+            "_tsDateModified": 1780335313,
+            "_bHasFiles": false,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aMetadata": {
+                    "_nBounty": 0,
+                    "_sSnippet": "I want a Saria 3ds over child link model like the modloader website...."
+                },
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/requests",
+                        "_sFile": "6a1dc29272ef7.jpg",
+                        "_sFile220": "220-90_6a1dc29272ef7.jpg",
+                        "_hFile220": 165,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_6a1dc29272ef7.jpg",
+                        "_hFile530": 398,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_6a1dc29272ef7.jpg",
+                        "_hFile100": 75,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 4373258,
+                "_sName": "ESTUARDOYYY",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/4373258",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/static\/img\/defaults\/avatar.gif"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Model\/Texture",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/requests\/cats\/3089",
+                "_sIconUrl": ""
+            },
+            "_sResolution": "Expired",
+            "_akResolution": "expired",
+            "_sResolutionMessage": "",
+            "_aAdditionalRewards": null,
+            "_nBounty": 0,
+            "_tsLastBoostDate": 0,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 3,
+            "_nPostCount": 8,
+            "_nViewCount": 1545,
+            "_bIsOwnedByAccessor": false
+        }
+    ]
+}

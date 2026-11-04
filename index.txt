@@ -1,0 +1,40 @@
+== subfeed_new https://gamebanana.com/apiv11/Game/16121/Subfeed?_nPage=1&_nPerpage=3&_sSort=new&_aFilters%5BGeneric_Category%5D=Mod
+200 application/json; charset=UTF-8
+== subfeed_default https://gamebanana.com/apiv11/Game/16121/Subfeed?_nPage=1&_nPerpage=2&_sSort=default
+200 application/json; charset=UTF-8
+== subfeed_updated https://gamebanana.com/apiv11/Game/16121/Subfeed?_nPage=1&_nPerpage=2&_sSort=updated
+200 application/json; charset=UTF-8
+== subfeed_popular https://gamebanana.com/apiv11/Game/16121/Subfeed?_nPage=1&_nPerpage=2&_sSort=popular
+400 application/json; charset=UTF-8
+== search https://gamebanana.com/apiv11/Util/Search/Results?_sSearchString=link&_nPage=1&_nPerpage=3&_idGameRow=16121
+200 application/json; charset=UTF-8
+== search_model https://gamebanana.com/apiv11/Util/Search/Results?_sModelName=Mod&_sSearchString=link&_nPage=1&_nPerpage=3&_idGameRow=16121
+200 application/json; charset=UTF-8
+== categories https://gamebanana.com/apiv11/Mod/Categories?_idGameRow=16121&_sSort=a_to_z&_bShowEmpty=true
+200 application/json; charset=UTF-8
+== index_newest https://gamebanana.com/apiv11/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_sSort=Generic_Newest
+200 application/json; charset=UTF-8
+== index_downloads https://gamebanana.com/apiv11/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_sSort=Generic_MostDownloaded
+200 application/json; charset=UTF-8
+== index_liked https://gamebanana.com/apiv11/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_sSort=Generic_MostLiked
+200 application/json; charset=UTF-8
+== index_name https://gamebanana.com/apiv11/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_aFilters%5BGeneric_Name%5D=link
+400 application/json; charset=UTF-8
+first category: 47454
+== index_category https://gamebanana.com/apiv11/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_aFilters%5BGeneric_Category%5D=47454
+200 application/json; charset=UTF-8
+first mod: 98906
+== mod_files https://gamebanana.com/apiv11/Mod/98906/Files
+200 application/json; charset=UTF-8
+== mod_profile https://gamebanana.com/apiv11/Mod/98906/ProfilePage
+200 application/json; charset=UTF-8
+== download head https://gamebanana.com/dl/587995
+HTTP/2 302 
+content-type: text/html; charset=UTF-8
+location: https://files.gamebanana.com/mods/td_ultimate_b3.rar
+HTTP/2 302 
+content-length: 0
+location: https://filecache39.gamebanana.com/mods/td_ultimate_b3.rar
+HTTP/2 200 
+content-type: application/x-rar-compressed
+content-length: 1054736

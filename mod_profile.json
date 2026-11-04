@@ -1,0 +1,407 @@
+{
+    "_idRow": 98906,
+    "_nStatus": "0",
+    "_bIsPrivate": false,
+    "_bAccessorIsSubmitter": false,
+    "_bIsTrashed": false,
+    "_bIsWithheld": false,
+    "_sName": "td_ultimate",
+    "_sCommentsMode": "open",
+    "_tsDateModified": 1623188674,
+    "_tsDateAdded": 1533275548,
+    "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/98906",
+    "_aPreviewMedia": {
+        "_aImages": [
+            {
+                "_sType": "screenshot",
+                "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                "_sCaption": "map",
+                "_sFile": "60b41dec19e5d.jpg",
+                "_sFile530": "530-90_60b41dec19e5d.jpg",
+                "_sFile100": "100-90_60b41dec19e5d.jpg",
+                "_sFile220": "220-90_60b41dec19e5d.jpg"
+            },
+            {
+                "_sType": "screenshot",
+                "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                "_sCaption": "map",
+                "_sFile": "60b41deac2344.jpg",
+                "_sFile100": "100-90_60b41deac2344.jpg"
+            },
+            {
+                "_sType": "screenshot",
+                "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                "_sCaption": "boss",
+                "_sFile": "60b41deb76f8c.jpg",
+                "_sFile100": "100-90_60b41deb76f8c.jpg"
+            },
+            {
+                "_sType": "screenshot",
+                "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                "_sCaption": "boss",
+                "_sFile": "60b41de9c53fc.jpg",
+                "_sFile100": "100-90_60b41de9c53fc.jpg"
+            }
+        ]
+    },
+    "_nUpdatesCount": 1,
+    "_bHasUpdates": true,
+    "_tsDateUpdated": 1623188524,
+    "_nAllTodosCount": 0,
+    "_bHasTodos": false,
+    "_nPostCount": 2,
+    "_aTags": [
+        {
+            "_sTitle": "Textures",
+            "_sValue": "Default"
+        },
+        {
+            "_sTitle": "Development State",
+            "_sValue": "Beta"
+        },
+        {
+            "_sTitle": "Aesthetic",
+            "_sValue": "Default"
+        },
+        {
+            "_sTitle": "Size",
+            "_sValue": "Tiny"
+        },
+        {
+            "_sTitle": "Environment",
+            "_sValue": "Space"
+        },
+        {
+            "_sTitle": "Time of Day",
+            "_sValue": "Daytime"
+        }
+    ],
+    "_bCreatedBySubmitter": true,
+    "_bIsPorted": true,
+    "_nThanksCount": 0,
+    "_sInitialVisibility": "show",
+    "_sDownloadUrl": "https:\/\/gamebanana.com\/mods\/download\/98906",
+    "_nDownloadCount": 326,
+    "_aFiles": [
+        {
+            "_idRow": 587995,
+            "_sFile": "td_ultimate_b3.rar",
+            "_nFilesize": 1054736,
+            "_tsDateAdded": 1623186948,
+            "_nDownloadCount": 135,
+            "_sDownloadUrl": "https:\/\/gamebanana.com\/dl\/587995",
+            "_sMd5Checksum": "55540259a3e083e806cef384da50c98c",
+            "_sAnalysisState": "done",
+            "_sAnalysisResult": "ok",
+            "_sAnalysisResultVerbose": "File passed preliminary analysis",
+            "_sAvState": "done",
+            "_sAvResult": "clean",
+            "_bIsArchived": false,
+            "_bHasContents": true,
+            "_aModManagerIntegrations": [
+                {
+                    "_sIconClasses": "ModboyIcon",
+                    "_idToolRow": 6321,
+                    "_aGameRowIds": [
+                        4254,
+                        2,
+                        4660,
+                        4,
+                        34,
+                        262,
+                        263,
+                        6651,
+                        312,
+                        9,
+                        5,
+                        249,
+                        292,
+                        222,
+                        3456,
+                        296,
+                        4537,
+                        297,
+                        5418,
+                        3370,
+                        5306,
+                        4214,
+                        10,
+                        5237,
+                        73,
+                        66,
+                        124,
+                        157,
+                        150,
+                        5531,
+                        5694,
+                        1843,
+                        6,
+                        6137,
+                        6131,
+                        2929,
+                        6705,
+                        8679,
+                        7553
+                    ],
+                    "_sModManagerAlias": "Modboy",
+                    "_sInstallerName": "Modboy",
+                    "_idSubmitterRow": 142413,
+                    "_sInstallerUrl": "https:\/\/gamebanana.com\/tools\/6321",
+                    "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/tools\/60b4e38695538.png",
+                    "_sDownloadUrl": "modboy:\/\/Mod,98906,587995"
+                }
+            ]
+        }
+    ],
+    "_nSubscriberCount": 0,
+    "_aContributingStudios": [],
+    "_sLicense": "<a rel=\"license\" href=\"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/\"><img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"https:\/\/i.creativecommons.org\/l\/by-nc-nd\/4.0\/88x31.png\" \/><\/a><br \/>This work is licensed under a <a rel=\"license\" href=\"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/\">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License<\/a>.",
+    "_aLicenseChecklist": {
+        "yes": [
+            "Download and install this Mod"
+        ],
+        "ask": [
+            "Redistribute this Mod on other sites",
+            "Modify this Mod and distribute the modified Mod on GameBanana",
+            "Modify this Mod and distribute the modified Mod on another site",
+            "Use parts of this Mod in another Mod and distribute the Mod on GameBanana",
+            "Use parts of this Mod in another Mod and distribute the Mod on another site",
+            "Use this Mod or components of this Mod in adult\/NSFW content"
+        ],
+        "no": [
+            "Use this Mod or components of this Mod commercially"
+        ]
+    },
+    "_sDescription": "td_ultimate_b3",
+    "_bGenerateTableOfContents": false,
+    "_sText": "Map for Tower Defense aimed at the <span class=\"GreenColor SelectedElement\">Drunk-Gaming.net<\/span>&nbsp;community<br><br>My very first map that I created ... :D<br><br><span class=\"RedColor\"><b>NOW IT'S REWORKED<\/b><\/span>",
+    "_bIsObsolete": false,
+    "_nLikeCount": 1,
+    "_nViewCount": 4085,
+    "_sVersion": "b2",
+    "_bAcceptsDonations": true,
+    "_bShowRipePromo": true,
+    "_aEmbeddables": {
+        "_sEmbeddableImageBaseUrl": "https:\/\/gamebanana.com\/mods\/embeddables\/98906",
+        "_aVariants": [
+            "small",
+            "small_square",
+            "medium",
+            "medium_square",
+            "medium_square_minimal",
+            "large",
+            "large_minimal",
+            "large_square",
+            "large_minimal_square",
+            "thumbnail"
+        ]
+    },
+    "_aSubmitter": {
+        "_idRow": 1586337,
+        "_sName": "_rodoxd27#",
+        "_sUserTitle": "Rodox",
+        "_sHonoraryTitle": "",
+        "_tsJoinDate": 1501119169,
+        "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/5ab9186b2a45c.png",
+        "_sSigUrl": "",
+        "_sProfileUrl": "https:\/\/gamebanana.com\/members\/1586337",
+        "_sPointsUrl": "https:\/\/gamebanana.com\/members\/logs\/pointslog\/1586337",
+        "_sMedalsUrl": "https:\/\/gamebanana.com\/members\/stats\/medals\/1586337",
+        "_bIsOnline": false,
+        "_sLocation": "<a href=\"https:\/\/gamebanana.com\">Home<\/a> > <a href=\"https:\/\/gamebanana.com\/members\">Members<\/a> > <a href=\"https:\/\/gamebanana.com\/members\/1586337\">_rodoxd27#<\/a>",
+        "_sOnlineTitle": "",
+        "_sOfflineTitle": "",
+        "_nPoints": 5071,
+        "_nPointsRank": 9182,
+        "_aNormalMedals": [
+            [
+                "m_age_1.png",
+                "One month a member",
+                "normal",
+                203361
+            ],
+            [
+                "m_age_2.png",
+                "6 months a member",
+                "normal",
+                203362
+            ],
+            [
+                "m_age_3.png",
+                "1 year a member",
+                "normal",
+                216322
+            ],
+            [
+                "maps1.png",
+                "Submitted 5 Maps",
+                "normal",
+                216656
+            ],
+            [
+                "m_age_4.png",
+                "2 years a member",
+                "normal",
+                261612
+            ],
+            [
+                "mods1.png",
+                "Submitted 5 Mods",
+                "normal",
+                403642
+            ],
+            [
+                "mods2.png",
+                "Submitted 10 Mods",
+                "normal",
+                403643
+            ],
+            [
+                "returns_1.png",
+                "Returned 100 times",
+                "normal",
+                420903
+            ],
+            [
+                "m_age_5.png",
+                "4 years a member",
+                "normal",
+                441422
+            ],
+            [
+                "m_pr_1.png",
+                "Reached 1,000 Points",
+                "normal",
+                762853
+            ],
+            [
+                "thanks_recvd_1.png",
+                "Received thanks 5 times",
+                "normal",
+                1257940
+            ],
+            [
+                "m_pr_2.png",
+                "Reached 2,500 Points",
+                "normal",
+                2973333
+            ]
+        ],
+        "_aRareMedals": [
+            [
+                "mods3.png",
+                "Submitted 15 Mods",
+                "rare",
+                414264
+            ],
+            [
+                "mods4.png",
+                "Submitted 20 Mods",
+                "rare",
+                596097
+            ],
+            [
+                "m_age_6.png",
+                "6 years a member",
+                "rare",
+                1484739
+            ]
+        ],
+        "_aLegendaryMedals": [],
+        "_bHasRipe": false,
+        "_nBuddyCount": 10,
+        "_nSubscriberCount": 6,
+        "_aDonationMethods": [],
+        "_bAccessorIsBuddy": false,
+        "_bBuddyRequestExistsWithAccessor": false,
+        "_bAccessorIsSubscribed": false,
+        "_aBio": [
+            {
+                "_sTitle": "Gender",
+                "_sValue": "Male"
+            },
+            {
+                "_sTitle": "Gamer type",
+                "_sValue": "Casual"
+            },
+            {
+                "_sTitle": "Favorite Game",
+                "_sValue": "Counter Strike"
+            },
+            {
+                "_sTitle": "City",
+                "_sValue": "Venezuela"
+            },
+            {
+                "_sTitle": "First Language",
+                "_sValue": "Spanish"
+            },
+            {
+                "_sTitle": "Favorite CS Map",
+                "_sValue": "de_dust2"
+            }
+        ],
+        "_aDefaultLicenseChecklist": [
+            "yes",
+            "ask",
+            "ask",
+            "ask",
+            "ask",
+            "ask",
+            "no",
+            "ask"
+        ],
+        "_sDefaultLicense": ""
+    },
+    "_bFollowLinks": true,
+    "_aGame": {
+        "_idRow": 4254,
+        "_sName": "Counter-Strike 1.6",
+        "_sAbbreviation": "CS1.6",
+        "_sProfileUrl": "https:\/\/gamebanana.com\/games\/4254",
+        "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/5ea788a63f636.png",
+        "_sBannerUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/5ea788a63f636.png",
+        "_nSubscriberCount": 6255,
+        "_bHasSubmissionQueue": false,
+        "_bAccessorIsSubscribed": false
+    },
+    "_aCategory": {
+        "_idRow": 5519,
+        "_sName": "Tower Defense",
+        "_sModelName": "ModCategory",
+        "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/5519",
+        "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/5baaced3aaeda.png",
+        "_bIsObsolete": false
+    },
+    "_aSuperCategory": {
+        "_idRow": 5474,
+        "_sName": "Maps",
+        "_sModelName": "ModCategory",
+        "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/5474",
+        "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/609848f4edf1a.gif"
+    },
+    "_aCredits": [
+        {
+            "_sGroupName": "Original Authors",
+            "_aAuthors": [
+                {
+                    "_sRole": "Mapper",
+                    "_sName": "_rodoxd27#"
+                }
+            ]
+        },
+        {
+            "_sGroupName": "Special Thanks",
+            "_aAuthors": [
+                {
+                    "_sRole": "Mapper",
+                    "_sName": "Daniel Mapper"
+                },
+                {
+                    "_sRole": "Mapper",
+                    "_sName": "Elisso n.n"
+                }
+            ]
+        }
+    ]
+}

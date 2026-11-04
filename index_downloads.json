@@ -1,0 +1,188 @@
+{
+    "_aMetadata": {
+        "_nRecordCount": 413,
+        "_bIsComplete": false,
+        "_nPerpage": 2
+    },
+    "_aRecords": [
+        {
+            "_idRow": 477979,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "Djipi's 3DS Experience + Skilar's Art Plus Link",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/477979",
+            "_tsDateAdded": 1699378804,
+            "_tsDateModified": 1789063429,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "654a74e75fa34.jpg",
+                        "_sFile220": "220-90_654a74e75fa34.jpg",
+                        "_hFile220": 141,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_654a74e75fa34.jpg",
+                        "_hFile530": 339,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_654a74e75fa34.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100,
+                        "_sFile800": "800-90_654a74e75fa34.jpg",
+                        "_hFile800": 512,
+                        "_wFile800": 800
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "654a750666294.jpg",
+                        "_sFile100": "100-90_654a750666294.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "654a7526950fe.jpg",
+                        "_sFile100": "100-90_654a7526950fe.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "654a7546568db.jpg",
+                        "_sFile100": "100-90_654a7546568db.jpg",
+                        "_hFile100": 64,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 2994531,
+                "_sName": "Djipi",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/2994531",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/img\/av\/654aba9e6a59c.png"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Complete Overhaul",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/26178",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/654a7934ec5eb.png"
+            },
+            "_sVersion": "6.0.2",
+            "_tsDateUpdated": 1788847027,
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 323,
+            "_nPostCount": 566,
+            "_bWasFeatured": true,
+            "_nViewCount": 432397,
+            "_bIsOwnedByAccessor": false
+        },
+        {
+            "_idRow": 478711,
+            "_sModelName": "Mod",
+            "_sSingularTitle": "Mod",
+            "_sIconClasses": "SubmissionType Mod",
+            "_sName": "(Legacy) 3DS Character Pack",
+            "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/478711",
+            "_tsDateAdded": 1700310853,
+            "_tsDateModified": 1772739735,
+            "_bHasFiles": true,
+            "_aTags": [],
+            "_aPreviewMedia": {
+                "_aImages": [
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "66d61038b5ec5.jpg",
+                        "_sFile220": "220-90_66d61038b5ec5.jpg",
+                        "_hFile220": 124,
+                        "_wFile220": 220,
+                        "_sFile530": "530-90_66d61038b5ec5.jpg",
+                        "_hFile530": 298,
+                        "_wFile530": 530,
+                        "_sFile100": "100-90_66d61038b5ec5.jpg",
+                        "_hFile100": 56,
+                        "_wFile100": 100,
+                        "_sFile800": "800-90_66d61038b5ec5.jpg",
+                        "_hFile800": 450,
+                        "_wFile800": 800
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6675a8137a803.jpg",
+                        "_sFile100": "100-90_6675a8137a803.jpg",
+                        "_hFile100": 72,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6675a81654377.jpg",
+                        "_sFile100": "100-90_6675a81654377.jpg",
+                        "_hFile100": 76,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6675a81a1fa93.jpg",
+                        "_sFile100": "100-90_6675a81a1fa93.jpg",
+                        "_hFile100": 70,
+                        "_wFile100": 100
+                    },
+                    {
+                        "_sType": "screenshot",
+                        "_sBaseUrl": "https:\/\/images.gamebanana.com\/img\/ss\/mods",
+                        "_sFile": "6675a8271be3f.jpg",
+                        "_sFile100": "100-90_6675a8271be3f.jpg",
+                        "_hFile100": 43,
+                        "_wFile100": 100
+                    }
+                ]
+            },
+            "_aSubmitter": {
+                "_idRow": 2632789,
+                "_sName": "Mikote111",
+                "_bIsOnline": false,
+                "_bHasRipe": false,
+                "_sProfileUrl": "https:\/\/gamebanana.com\/members\/2632789",
+                "_sAvatarUrl": "https:\/\/images.gamebanana.com\/static\/img\/defaults\/avatar.gif"
+            },
+            "_aGame": {
+                "_idRow": 16121,
+                "_sName": "Ship of Harkinian (Ocarina of Time PC Port)",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/games\/16121",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/games\/6243b10e3bac0.png"
+            },
+            "_aRootCategory": {
+                "_sName": "Legacy",
+                "_sProfileUrl": "https:\/\/gamebanana.com\/mods\/cats\/31639",
+                "_sIconUrl": "https:\/\/images.gamebanana.com\/img\/ico\/ModCategory\/66d6096a96746.png"
+            },
+            "_sVersion": "1.0",
+            "_bIsObsolete": false,
+            "_sInitialVisibility": "show",
+            "_bHasContentRatings": false,
+            "_nLikeCount": 97,
+            "_nPostCount": 61,
+            "_bWasFeatured": true,
+            "_nViewCount": 224301,
+            "_bIsOwnedByAccessor": false
+        }
+    ]
+}
