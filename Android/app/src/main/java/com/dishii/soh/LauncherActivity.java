@@ -78,6 +78,10 @@ public class LauncherActivity extends Activity {
     private List<GameBananaApi.Category> categories = null;
     private int browseRequest = 0;
     private final List<AlertDialog> dialogs = new ArrayList<>();
+    private Updater.Release latestRelease = null;
+    private String updateCheckError = null;
+    private boolean updateChecked = false;
+    private TextView updatesNav;
     private boolean storageDeniedOnce = false;
 
     @Override
@@ -88,6 +92,7 @@ public class LauncherActivity extends Activity {
         showPane("play");
         if (!hasStorage()) requestStorage();
         else io.execute(() -> ModInstaller.cleanupStaging(getCacheDir()));
+        checkForUpdate();
     }
 
     @Override
@@ -145,6 +150,7 @@ public class LauncherActivity extends Activity {
         addNav(side, "Video", "video");
         addNav(side, "Browse mods", "browse");
         addNav(side, "Installed mods", "installed");
+        updatesNav = addNav(side, "Updates", "updates");
 
         View spacer = new View(this);
         side.addView(spacer, new LinearLayout.LayoutParams(1, 0, 1f));
@@ -159,7 +165,7 @@ public class LauncherActivity extends Activity {
         setContentView(root);
     }
 
-    private void addNav(LinearLayout side, String label, String pane) {
+    private TextView addNav(LinearLayout side, String label, String pane) {
         TextView b = button(label, 17);
         b.setTag(pane);
         b.setOnClickListener(v -> showPane(pane));
@@ -167,6 +173,7 @@ public class LauncherActivity extends Activity {
         lp.bottomMargin = dp(8);
         side.addView(b, lp);
         navButtons.add(b);
+        return b;
     }
 
     private void showPane(String pane) {
@@ -176,11 +183,13 @@ public class LauncherActivity extends Activity {
             b.setTextColor(sel ? GOLD : TEXT);
             b.setTypeface(null, sel ? Typeface.BOLD : Typeface.NORMAL);
         }
+        if (Updater.isNewer(latestRelease)) updatesNav.setTextColor(OK_GREEN);
         content.removeAllViews();
         switch (pane) {
             case "video": buildVideoPane(); break;
             case "browse": buildBrowsePane(); break;
             case "installed": buildInstalledPane(); break;
+            case "updates": buildUpdatesPane(); break;
             default: buildPlayPane(); break;
         }
     }
@@ -225,6 +234,14 @@ public class LauncherActivity extends Activity {
                 ui(() -> info.setText("Video: " + SohConfig.presetLabel(this) + "\nMods: " + e + " enabled"
                         + (t > e ? " (" + (t - e) + " disabled)" : "")));
             });
+        }
+        if (Updater.isNewer(latestRelease)) {
+            TextView upd = button("⬆   Update available: " + latestRelease.title, 16);
+            upd.setTextColor(OK_GREEN);
+            upd.setOnClickListener(v -> showPane("updates"));
+            LinearLayout.LayoutParams up = new LinearLayout.LayoutParams(dp(480), dp(52));
+            up.topMargin = dp(12);
+            col.addView(upd, up);
         }
         if (running) {
             TextView warn = text("The game is still running. Video and mod changes apply after you quit it "
@@ -726,6 +743,130 @@ public class LauncherActivity extends Activity {
                 ui(() -> error("Couldn't install " + staged.mod.name, e));
             } finally {
                 ModInstaller.end();
+            }
+        });
+    }
+
+    // =============================================================================================
+    // Updates
+    // =============================================================================================
+
+    private void checkForUpdate() {
+        io.execute(() -> {
+            Updater.Release r = null;
+            String err = null;
+            try {
+                r = Updater.latest();
+            } catch (Exception e) {
+                err = e.getMessage() != null ? e.getMessage() : e.toString();
+            }
+            final Updater.Release found = r;
+            final String error = err;
+            ui(() -> {
+                latestRelease = found;
+                updateCheckError = error;
+                updateChecked = true;
+                if (Updater.isNewer(found)) {
+                    updatesNav.setText("Updates  ●");
+                    updatesNav.setTextColor(OK_GREEN);
+                }
+                if ("updates".equals(currentPane) || ("play".equals(currentPane) && Updater.isNewer(found))) {
+                    View focused = getCurrentFocus();
+                    showPane(currentPane);
+                    if (focused != null && !isInside(focused, content)) focused.requestFocus();
+                }
+            });
+        });
+    }
+
+    private void buildUpdatesPane() {
+        LinearLayout col = column();
+        col.addView(header("Updates", "New Fire TV builds install over this one and keep your settings, saves and mods."));
+        col.addView(text("Installed: build " + (BuildConfig.VERSION_CODE - 100) + "  (" + BuildConfig.VERSION_NAME + ")",
+                16, TEXT, false));
+
+        TextView action;
+        if (!updateChecked) {
+            col.addView(text("Checking GitHub…", 16, MUTED, false));
+            action = null;
+        } else if (updateCheckError != null) {
+            col.addView(text("Couldn't check for updates: " + updateCheckError, 15, WARN, false));
+            action = button("Check again", 16);
+            action.setOnClickListener(v -> { updateChecked = false; showPane("updates"); checkForUpdate(); });
+        } else if (Updater.isNewer(latestRelease)) {
+            TextView t = text("Available: " + latestRelease.title + "  ·  " + ModInstaller.formatSize(latestRelease.apkSize),
+                    18, OK_GREEN, true);
+            t.setPadding(0, dp(10), 0, dp(6));
+            col.addView(t);
+            if (!latestRelease.notes.isEmpty()) {
+                TextView notes = text(latestRelease.notes, 14, MUTED, false);
+                notes.setPadding(0, 0, 0, dp(10));
+                col.addView(notes);
+            }
+            action = button("⬆   Download and install", 18);
+            action.setTextColor(OK_GREEN);
+            action.setOnClickListener(v -> startUpdate(latestRelease));
+        } else {
+            col.addView(text(latestRelease == null
+                    ? "No published builds found yet."
+                    : "You're up to date.", 16, MUTED, false));
+            action = button("Check again", 16);
+            action.setOnClickListener(v -> { updateChecked = false; showPane("updates"); checkForUpdate(); });
+        }
+        if (action != null) {
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(dp(360), dp(56));
+            lp.topMargin = dp(12);
+            col.addView(action, lp);
+        }
+        content.addView(scroll(col));
+        if (action != null) action.requestFocus();
+    }
+
+    private void startUpdate(Updater.Release r) {
+        if (!Updater.canInstall(this)) {
+            show(new AlertDialog.Builder(this)
+                    .setTitle("Allow installing updates")
+                    .setMessage("Fire OS needs a one-time OK before this app can install its own updates.\n\n"
+                            + "On the next screen, turn on Ship of Harkinian. If no screen opens, go to Settings → "
+                            + "My Fire TV → Developer options → Install unknown apps → Ship of Harkinian → On.\n\n"
+                            + "Then press Back and choose Download and install again.")
+                    .setPositiveButton("Open settings", (d, w) -> {
+                        try { startActivity(Updater.unknownSourcesSettings(this)); }
+                        catch (Exception e) { toast("Open Settings → My Fire TV → Developer options → Install unknown apps."); }
+                    })
+                    .setNegativeButton("Cancel", null));
+            return;
+        }
+        AtomicBoolean cancel = new AtomicBoolean(false);
+        LinearLayout box = column();
+        box.setPadding(dp(24), dp(20), dp(24), dp(12));
+        TextView stage = text("Starting download…", 16, TEXT, false);
+        ProgressBar bar = new ProgressBar(this, null, android.R.attr.progressBarStyleHorizontal);
+        bar.setMax(1000);
+        box.addView(stage);
+        box.addView(bar, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, dp(24)));
+        AlertDialog progress = show(new AlertDialog.Builder(this)
+                .setTitle("Updating to " + r.title)
+                .setView(box)
+                .setCancelable(false)
+                .setNegativeButton("Cancel", (d, w) -> cancel.set(true)));
+        io.execute(() -> {
+            try {
+                File apk = Updater.download(this, r, (s, done, total) -> ui(() -> {
+                    if (total > 0) {
+                        bar.setProgress((int) (done * 1000 / total));
+                        stage.setText(s + "  " + ModInstaller.formatSize(done) + " / " + ModInstaller.formatSize(total));
+                    } else {
+                        stage.setText(s);
+                    }
+                }), cancel);
+                ui(() -> stage.setText("Starting the installer…"));
+                Updater.install(this, apk);
+                ui(progress::dismiss); // Fire OS now shows its install screen
+            } catch (ModInstaller.CancelledException e) {
+                ui(() -> toast("Update cancelled"));
+            } catch (Throwable e) {
+                ui(() -> { progress.dismiss(); error("Couldn't update", e); });
             }
         });
     }

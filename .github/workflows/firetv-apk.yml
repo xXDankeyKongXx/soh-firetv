@@ -40,11 +40,27 @@ jobs:
           printf 'sdk.dir=%s\ncmake.dir=%s\n' "$ANDROID_HOME" "$CMAKE_DIR" > Android/local.properties
           cat Android/local.properties
 
+      - name: Signing key
+        env:
+          SOH_SIGNING: ${{ secrets.SOH_SIGNING }}
+        run: |
+          # Secret format: "<password>:<base64 PKCS12 keystore>". Without it the APK is debug-signed
+          # and no release is published (it couldn't install over the signed version anyway).
+          if [ -n "$SOH_SIGNING" ]; then
+            printf '%s' "${SOH_SIGNING#*:}" | base64 -d > "$RUNNER_TEMP/soh.p12"
+            echo "SOH_KEYSTORE=$RUNNER_TEMP/soh.p12" >> "$GITHUB_ENV"
+            echo "::add-mask::${SOH_SIGNING%%:*}"
+            echo "SOH_KEYSTORE_PASSWORD=${SOH_SIGNING%%:*}" >> "$GITHUB_ENV"
+            echo "SIGNED=1" >> "$GITHUB_ENV"
+          else
+            echo "::warning::SOH_SIGNING secret not set: debug-signed build, no release"
+          fi
+
       - name: Build release APK
         working-directory: Android
         run: |
           chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon --stacktrace
+          ./gradlew assembleRelease --no-daemon --stacktrace -PbuildNumber=${{ github.run_number }}
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
@@ -64,3 +80,17 @@ jobs:
           git add -A
           git commit -qm "Fire TV APK from ${GITHUB_SHA::7} (run ${GITHUB_RUN_ID})"
           git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}" apk-builds
+
+      - name: Publish GitHub release (used by the in-app updater)
+        if: env.SIGNED == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          APK=$(ls Android/app/build/outputs/apk/release/*.apk | head -1)
+          CODE=$((100 + ${{ github.run_number }}))
+          cp "$APK" ShipOfHarkinian-FireTV.apk
+          NOTES=$(git log -1 --pretty=%B | head -c 3000)
+          gh release create "vc-$CODE" ShipOfHarkinian-FireTV.apk \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --latest \
+            --title "Fire TV build ${{ github.run_number }} (9.0.2-firetv.${{ github.run_number }})" \
+            --notes "$NOTES"

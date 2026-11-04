@@ -389,13 +389,23 @@ public class MainActivity extends SDLActivity{
         }
     }
 
-    private void doVersionCheck(){
-        int currentVersion = BuildConfig.VERSION_CODE;
-        int storedVersion = preferences.getInt("appVersion", 1);
+    // Bump when the bundled game (soh.otr / extractor assets) changes, e.g. a new SoH release.
+    // Deliberately NOT the app's versionCode: Fire TV app updates happen often (in-app updater) and
+    // must not delete oot.otr, which would force a long re-extraction from the ROM every time.
+    private static final int GAME_ASSETS_VERSION = 902; // SoH 9.0.2
 
-        if (currentVersion > storedVersion) {
+    private void doVersionCheck(){
+        int stored = preferences.getInt("gameAssetsVersion", 0);
+        if (stored == 0 && preferences.contains("appVersion")) {
+            // Installed before this check existed, already on 9.0.2: keep the extracted files.
+            stored = GAME_ASSETS_VERSION;
+            preferences.edit().putInt("gameAssetsVersion", stored).apply();
+        }
+        if (stored != 0 && stored < GAME_ASSETS_VERSION) {
             deleteOutdatedAssets();
-            preferences.edit().putInt("appVersion", currentVersion).apply();
+        }
+        if (stored != GAME_ASSETS_VERSION) {
+            preferences.edit().putInt("gameAssetsVersion", GAME_ASSETS_VERSION).apply();
         }
     }
 

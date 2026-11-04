@@ -22,8 +22,27 @@ android {
         // 29, not 33: Fire OS 8 has no "All files access" screen, so legacy storage
         // (requestLegacyExternalStorage) is the only way to use /sdcard/SOH there.
         targetSdkVersion 29
-        versionCode 8
-        versionName "9.0.2-firetv"
+        // CI passes -PbuildNumber so every build gets a higher versionCode; the launcher's updater
+        // compares it with the latest GitHub release. (8 = the original 9.0.2 Android port.)
+        def buildNumber = project.hasProperty('buildNumber') ? project.property('buildNumber').toInteger() : 0
+        versionCode 100 + buildNumber
+        versionName buildNumber > 0 ? "9.0.2-firetv." + buildNumber : "9.0.2-firetv-dev"
+        // Where the launcher looks for updates (public GitHub repo with releases).
+        buildConfigField "String", "UPDATE_REPO", "\"" + (System.getenv("GITHUB_REPOSITORY") ?: "xXDankeyKongXx/soh-firetv") + "\""
+    }
+    // Permanent release key, so updates install over the previous version. CI decodes the
+    // SOH_SIGNING secret to a keystore and sets SOH_KEYSTORE / SOH_KEYSTORE_PASSWORD.
+    signingConfigs {
+        release {
+            def ks = System.getenv("SOH_KEYSTORE")
+            if (ks != null && new File(ks).exists()) {
+                storeFile file(ks)
+                storeType "pkcs12"
+                storePassword System.getenv("SOH_KEYSTORE_PASSWORD")
+                keyAlias "soh-firetv"
+                keyPassword System.getenv("SOH_KEYSTORE_PASSWORD")
+            }
+        }
     }
     buildTypes {
         debug {
@@ -39,7 +58,7 @@ android {
             minifyEnabled false
             debuggable false
             jniDebuggable false
-            signingConfig signingConfigs.debug
+            signingConfig System.getenv("SOH_KEYSTORE") != null ? signingConfigs.release : signingConfigs.debug
             externalNativeBuild {
                 cmake {
                     arguments "-DSDL_SHARED=ON", "-DANDROID_STL=c++_static", "-DHAVE_LD_VERSION_SCRIPT=OFF",'-DUSE_OPENGLES=ON'
