@@ -6,6 +6,9 @@ on:
     branches: [firetv]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-24.04
@@ -49,3 +52,15 @@ jobs:
           name: soh-firetv-apk
           path: Android/app/build/outputs/apk/release/*.apk
           if-no-files-found: error
+
+      - name: Publish APK to the apk-builds branch
+        run: |
+          mkdir publish && cp Android/app/build/outputs/apk/release/*.apk publish/
+          cd publish
+          git init -q
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git checkout -q -b apk-builds
+          git add -A
+          git commit -qm "Fire TV APK from ${GITHUB_SHA::7} (run ${GITHUB_RUN_ID})"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}" apk-builds
