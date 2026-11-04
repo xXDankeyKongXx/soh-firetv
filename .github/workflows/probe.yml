@@ -1,0 +1,46 @@
+# One-off: record GameBanana API responses for Ship of Harkinian (game 16121) so the in-app mod
+# browser can be written against real data. Results are pushed to the api-probe-results branch.
+name: GameBanana API probe
+on:
+  push:
+    branches: [api-probe]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Query API
+        run: |
+          mkdir out && cd out
+          UA="ShipOfHarkinian-FireTV/1.0"
+          B=https://gamebanana.com/apiv11
+          g() { echo "== $1 $2" >> index.txt; curl -sS -A "$UA" -o "$1.json" -w "%{http_code} %{content_type}\n" "$2" >> index.txt || true; }
+          g subfeed_new      "$B/Game/16121/Subfeed?_nPage=1&_nPerpage=3&_sSort=new&_aFilters%5BGeneric_Category%5D=Mod"
+          g subfeed_default  "$B/Game/16121/Subfeed?_nPage=1&_nPerpage=2&_sSort=default"
+          g subfeed_updated  "$B/Game/16121/Subfeed?_nPage=1&_nPerpage=2&_sSort=updated"
+          g subfeed_popular  "$B/Game/16121/Subfeed?_nPage=1&_nPerpage=2&_sSort=popular"
+          g search           "$B/Util/Search/Results?_sSearchString=link&_nPage=1&_nPerpage=3&_idGameRow=16121"
+          g search_model     "$B/Util/Search/Results?_sModelName=Mod&_sSearchString=link&_nPage=1&_nPerpage=3&_idGameRow=16121"
+          g categories       "$B/Mod/Categories?_idGameRow=16121&_sSort=a_to_z&_bShowEmpty=true"
+          g index_newest     "$B/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_sSort=Generic_Newest"
+          g index_downloads  "$B/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_sSort=Generic_MostDownloaded"
+          g index_liked      "$B/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_sSort=Generic_MostLiked"
+          g index_name       "$B/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_aFilters%5BGeneric_Name%5D=link"
+          CAT=$(jq -r 'if type=="array" then .[0]._idRow else (._aRecords[0]._idRow // empty) end' categories.json 2>/dev/null)
+          echo "first category: $CAT" >> index.txt
+          [ -n "$CAT" ] && g index_category "$B/Mod/Index?_nPage=1&_nPerpage=2&_aFilters%5BGeneric_Game%5D=16121&_aFilters%5BGeneric_Category%5D=$CAT"
+          MOD=$(jq -r '._aRecords[0]._idRow' subfeed_new.json)
+          echo "first mod: $MOD" >> index.txt
+          g mod_files   "$B/Mod/$MOD/Files"
+          g mod_profile "$B/Mod/$MOD/ProfilePage"
+          URL=$(jq -r '.[0]._sDownloadUrl' mod_files.json)
+          echo "== download head $URL" >> index.txt
+          curl -sS -A "$UA" -I -L "$URL" | grep -iE "^(HTTP|location|content-type|content-length|content-disposition)" >> index.txt || true
+      - name: Save results
+        run: |
+          cd out
+          git init -q && git checkout -q -b api-probe-results
+          git config user.name github-actions && git config user.email github-actions@users.noreply.github.com
+          git add -A && git commit -qm "GameBanana API probe"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}" api-probe-results
