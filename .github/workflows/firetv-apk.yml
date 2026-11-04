@@ -52,9 +52,9 @@ jobs:
             PW="${CLEAN%%:*}"
             B64="${CLEAN#*:}"
             echo "::add-mask::$PW"
-            echo "secret length ${#CLEAN}, key part ${#B64} chars (expected 5760)"
+            echo "secret length ${#CLEAN}, key part ${#B64} chars"
             if ! printf '%s' "$B64" | base64 -d > "$RUNNER_TEMP/soh.p12" 2>/dev/null; then
-              echo "::error::SOH_SIGNING doesn't contain a valid key (got ${#B64} of 5760 base64 characters). Re-paste the whole file contents."
+              echo "::error::SOH_SIGNING doesn't contain a valid key (got ${#B64} base64 characters; the file has 1384). Re-paste the whole file contents."
               exit 1
             fi
             if ! keytool -list -keystore "$RUNNER_TEMP/soh.p12" -storetype PKCS12 -storepass "$PW" > "$RUNNER_TEMP/ks.txt" 2>&1; then
